@@ -22,7 +22,7 @@
 				<link rel="shortcut icon" href="/static/images/index/favicon.png">
 				
 				<!--[if lt IE 9]>
-						<script src="js/html5shiv.js"></script>
+						<script src="/static/js/index/html5shiv.js"></script>
 						<link rel="stylesheet" href="/static/css/index/ie.css">
                 <![endif]-->
                 <style>
@@ -355,7 +355,7 @@
                                         <figure>
                                             <img src="/static/images/index/default270x167.jpg"   alt="Offer Image">
                                             <div class="overlay">
-                                                <a href="#" class="like"></a>
+                                                <a class="like"></a>
                                             </div>
                                         </figure>
                                         <article>
@@ -566,19 +566,19 @@
                 
                 
                 <!-- Scripts -->
-				<script src="js/jquery-1.7.1.min.js"></script>
-				<script src="js/jquery.flexslider.js"></script>
-                <script src="js/jquery.flexslider-min.js"></script>
-                <script src="js/jquery.elastislide.js"></script>
-                <script src="js/jquery.carouFredSel-6.0.4-packed.js"></script>
-                <script src="js/jcarousellite_1.0.1.js"></script>
-                <script src="js/jquery.zweatherfeed.js"></script>
-                <script src="js/jquery.simpleWeather-2.3.min.js"></script>
-                <script src="js/jquery.cycle.all.js"></script>
-                <script src="js/jquery-ui.js"></script>
-                <script src="js/bootstrap.min.js"></script>
-                <script src="js/jquery.isotope.min.js"></script>
-                <script src="js/jquery.tinyscrollbar.min.js"></script>
+				<script src="/static/js/index/jquery-1.7.1.min.js"></script>
+				<script src="/static/js/index/jquery.flexslider.js"></script>
+                <script src="/static/js/index/jquery.flexslider-min.js"></script>
+                <script src="/static/js/index/jquery.elastislide.js"></script>
+                <script src="/static/js/index/jquery.carouFredSel-6.0.4-packed.js"></script>
+                <script src="/static/js/index/jcarousellite_1.0.1.js"></script>
+                <script src="/static/js/index/jquery.zweatherfeed.js"></script>
+                <script src="/static/js/index/jquery.simpleWeather-2.3.min.js"></script>
+                <script src="/static/js/index/jquery.cycle.all.js"></script>
+                <script src="/static/js/index/jquery-ui.js"></script>
+                <script src="/static/js/index/bootstrap.min.js"></script>
+                <script src="/static/js/index/jquery.isotope.min.js"></script>
+                <script src="/static/js/index/jquery.tinyscrollbar.min.js"></script>
                 <script>
                     function goToByScroll(id){
                         $ = jQuery;
@@ -590,6 +590,13 @@
                         $('.scrollbar1').tinyscrollbar();
                     });
                 </script>
-                <script src="js/custom.js"></script>		
+                <script src="/static/js/index/custom.js"></script>	
+                <script>
+                    $(function(){
+                        $('.like').click(function(){
+                            console.log('设置悬浮显示信息')
+                        })
+                    })
+                </script>	
 		</body>
 </html>

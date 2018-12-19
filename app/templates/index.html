@@ -10,7 +10,7 @@
 				<meta name="viewport" content="width=device-width" />
 				
 				<!-- Title -->
-				<title>八阿哥租房系统</title>
+                <title>八阿哥租房系统</title>
 				
 				<!-- Style Sheet-->
                 <link rel="stylesheet" href="/static/css/index/bootstrap.css">
@@ -32,9 +32,14 @@
                     right: -100px;
                     margin-top: 10px;   
                 }
+                .logo{
+                    position:absolute;
+                    top: 68px;
+                    left: 110px;
+                }
                 #logoimg{
                     height: 100px;
-                    widows: 100px;
+                    /* width: 150px; */
                 }
                 #copy{
                     position: absolute;
@@ -81,7 +86,7 @@
 					                <div class="span3" id="login-link">
 					                	<!-- <div class="social-nav">
 					                    </div> -->
-                                        <a href="/private" class="sign-in" >个人主页</a>
+                                        <a href="/private" class="sign-in" >{{uname}}的个人主页</a>
                                         <a href="/cancel" class="sign-in">退出</a>
 					                </div>
 					            </div>
@@ -99,7 +104,7 @@
                             <div class="span4">
                             	<div class="logo">
                                     <!-- 修改logo -->
-                                	<a href="#"><img src="/static/images/index/logo.png" alt="Logo" id="logoimg"></a>
+                                	<a href="/"><img src="/static/images/index/logo.png" alt="Logo" id="logoimg"></a>
                                 </div>
                             </div>
                         	<!-- Logo -->
@@ -123,7 +128,7 @@
                     </div>
                 </div>
                 <!-- HEADER -->
-                <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >免费模板</a></div>
+                <div class="copyrights">Collect from <a href="/" >免费模板</a></div>
 
                 <!-- Main Navigation -->
                 <div class="nav-wrapper">
@@ -229,7 +234,7 @@
                     <!-- Reservation box -->
                     <div id="accordion">
                         <!-- 修改图标 -->
-                      <h3> <span class="flight">选择您的筛选条件</span> <a href="#"></a> </h3>
+                      <h3> <span class="flight">选择您的筛选条件</span> </h3>
                       <div class="detail">
                          <form action="#" method="post">
                             <!-- <div class="trip">
@@ -336,7 +341,7 @@
                          
                         <div class="row offer-sec">
                         <ul class="elastislide-list clearfix" id="carousel">
-
+                            <!-- 下面都是重复内容.span3,用一个进行循环展示即可 -->
                             <li class="span3">
                             	<div class="offer">
                                 	<figure>
@@ -479,29 +484,31 @@
                 <!-- Special Offer -->
                 
                 <!-- Testimonial -->
+
                	<div class="testimonial-wrapper">
                 	<div class="container">
                     	<div class="row">
                         	<div class="span12 test">
-                            
+                                
                             	<div class="testimonial">
+                                    <!-- 在此处可以进行for循环展示精华推荐 -->
                                 	<div>
                                 		<span class="comas"></span>
-                                		<p>Quis inceptos lorem fusce feugiat hendrerit felis eu aliquet fames neque amet aliquet ornare, augue amet facilisis suspendisse quisque ligula fusce et conubia quisque fames ullamcorper leo integer etiam leo dapibus arcu etiam.</p>
+                                		<p>精选的住房推荐评语1</p>
                                 		<figure>
                                 			<img src="/static/images/index/testimonial-pic.png" alt="PIc"> 
                                 		</figure>
-                                		<p class="client">Kavin</p>
-                                		<span>Graphic Designer</span>
+                                		<p class="client">宝安区</p>
+                                		<span>金色领域</span>
                                 	</div>
                                     <div>
                                 		<span class="comas"></span>
-                                		<p>Quis inceptos lorem fusce feugiat hendrerit felis eu aliquet fames neque amet aliquet ornare, augue amet facilisis suspendisse quisque ligula fusce et conubia quisque fames ullamcorper leo integer etiam leo dapibus arcu etiam.</p>
+                                		<p>精选的住房推荐评语2</p>
                                 		<figure>
                                 			<img src="/static/images/index/testimonial-pic.png" alt="PIc"> 
                                 		</figure>
-                                		<p class="client">Junaid Chaudary</p>
-                                		<span>Web Developer</span>
+                                		<p class="client">龙岗区</p>
+                                		<span>天颂雅苑</span>
                                 	</div>
                                 </div>
                                 <div class="test-button">

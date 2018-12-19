@@ -105,7 +105,7 @@ FONTS
 BASIC STYLES
 ****************************************************************************/
 
-body { background: #272727; color: #000; font: 14px Arial, Helvetica, sans-serif; }
+body { background: #272727; color: #272727; font: 14px Arial, Helvetica, sans-serif; }
 
 /* a { color: #00e; text-decoration: none; }
 a:visited { color: #551a8b; }
@@ -321,14 +321,14 @@ nav > ul > li ul li a:hover { color: #017eba; }
 
 .detail .pull-left { width: 200px; }
 .detail .pull-right { width: 200px; }
-.detail label { font:12px 'gotham_roundedmedium',Times New Roman, Times, serif; color: #5a656a; background: url(../../images/index/requaired-dot.png) no-repeat 84px 0px;  }
-.detail label.dst { background: url(../../images/index/requaired-dot.png) no-repeat 67px 0px; }
+.detail label { font:12px 'gotham_roundedmedium',Times New Roman, Times, serif; color: #5a656a; background: url() no-repeat 84px 0px;  }
+.detail label.dst { background: url() no-repeat 67px 0px; }
 .detail .location input { font:12px 'proxima_novaregular_italic',Times New Roman, Times, serif; color:#5a656a; background: url(../../images/index/input0bg.png) repeat-x; border: none; padding: 10px 8px; width: 186px; }
 
-.detail .location .date label { background: url(../../images/index/requaired-dot.png) no-repeat 75px 0px; }
+.detail .location .date label { background: url() no-repeat 75px 0px; }
 .detail .location .date div { width: 96px; float: left; }
 .detail .location .date div.Depart-Date { margin-right: 8px; }
-.detail .location .date div input { cursor: pointer; width: 83%; background: #fbfcfc url(../../images/index/clander.png) no-repeat 72px 10px; }
+.detail .location .date div input { cursor: pointer; width: 83%; background: #fbfcfc url() no-repeat 72px 10px; }
 
 /** Calender **/
 #ui-datepicker-div { background: #333 !important; width: 265px; }
@@ -350,7 +350,7 @@ nav > ul > li ul li a:hover { color: #017eba; }
 
 .detail .persons div { width: 56px; float: left; }
 .detail .persons div.ad { margin-right: 13px; }
-.detail .persons div.ad label { background: url(../../images/index/requaired-dot.png) no-repeat 38px 0px; }
+.detail .persons div.ad label { background: url() no-repeat 38px 0px; }
 .detail .persons div input { width: 72%; }
 .ui-spinner { position: relative; }
 .ui-spinner-up span { position: absolute; top: -4px; right: 10px; cursor: pointer; font-size:0px; background: url(../../images/index/top-arrow.png) no-repeat; width: 8px; height: 4px; display: inline-block; }
@@ -469,12 +469,12 @@ checking_form input {  }
 .checking_form .pull-left { width: 100%; }
 .checking_form .pull-right { width: 100%; }
 
-.checking_form label { font:12px 'gotham_roundedmedium',Times New Roman, Times, serif; color: #5a656a; background: url(../../images/index/requaired-dot.png) no-repeat 84px 0px;  }
-.checking_form label.dst { background: url(../../images/index/requaired-dot.png) no-repeat 67px 0px; }
+.checking_form label { font:12px 'gotham_roundedmedium',Times New Roman, Times, serif; color: #5a656a; background: url() no-repeat 84px 0px;  }
+.checking_form label.dst { background: url() no-repeat 67px 0px; }
 .checking_form .location input { font:11px 'proxima_nova_rgregular',Times New Roman, Times, serif; color:#5a656a; background: url(../../images/index/input0bg.png) repeat-x; border: none; padding: 10px 8px; width: 77%; }
 
 .checking_form .location .date { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px dashed #d1d1d1; }
-.checking_form .location .date label { background: url(../../images/index/requaired-dot.png) no-repeat 63px 0px; }
+.checking_form .location .date label { background: url() no-repeat 63px 0px; }
 .checking_form .location .date div { width: 89px; float: left; }
 .checking_form .location .date div.Depart-Date { margin-right: 10px; }
 .checking_form .location .date div input { cursor: pointer; width: 83%; background: #fbfcfc url(../../images/index/clander.png) no-repeat 72px 10px; }
@@ -482,7 +482,7 @@ checking_form input {  }
 .checking_form  .persons {  padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px dashed #d1d1d1;}
 .checking_form  .persons div { width: 56px; float: left; }
 .checking_form  .persons div.ad { margin-right: 13px; }
-.checking_form  .persons div.ad label { background: url(../../images/index/requaired-dot.png) no-repeat 50px 0px; }
+.checking_form  .persons div.ad label { background: url() no-repeat 50px 0px; }
 .checking_form  .persons div input { width: 72%; }
 
 .check_detail p { font:14px 'gotham_roundedmedium',Times New Roman, Times, serif; color: #5a656a; padding-left: 24px;}

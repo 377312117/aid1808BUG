@@ -32,9 +32,14 @@
                     right: -100px;
                     margin-top: 10px;   
                 }
+                .logo{
+                    position:absolute;
+                    top: 68px;
+                    left: 110px;
+                }
                 #logoimg{
                     height: 100px;
-                    widows: 100px;
+                    /* width: 150px; */
                 }
                 #copy{
                     position: absolute;
@@ -81,7 +86,7 @@
 					                <div class="span3" id="login-link">
 					                	<!-- <div class="social-nav">
 					                    </div> -->
-                                        <a href="/private" class="sign-in" >个人主页</a>
+                                        <a href="/private" class="sign-in" >{{uname}}的个人主页</a>
                                         <a href="/cancel" class="sign-in">退出</a>
 					                </div>
 					            </div>
@@ -286,6 +291,8 @@
                                             <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                                             <div class="viewport">
                                                 <div class="overview">
+                                                    <!-- 此处可以进行for循环展示 -->
+                                                    <!-- ================= -->
                                                     <div class="deals clearfix">
                                                         <figure class="pull-left"><img src="/static/images/index/default270x167.jpg"  alt="Pic"></figure>
                                                         <article class="  pull-left clearfix">
@@ -301,71 +308,11 @@
                                                             </div>
                                                         </article>
                                                     </div>
-                                                    <div class="deals clearfix">
-                                                        <figure class="pull-left"><img src="/static/images/index/default270x167.jpg"  alt="Pic"></figure>
-                                                        <article class="  pull-left clearfix">
-                                                            <div class="hot">
-                                                                <p>Kavin hotel</p>
-                                                                <p class="stars">
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#"></a>
-                                                                    <a href="#"></a>
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div class="deals clearfix">
-                                                        <figure class="pull-left"><img src="/static/images/index/default270x167.jpg"  alt="Pic"></figure>
-                                                        <article class="  pull-left clearfix">
-                                                            <div class="hot">
-                                                                <p>Kavin hotel</p>
-                                                                <p class="stars">
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#"></a>
-                                                                    <a href="#"></a>
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div class="deals clearfix">
-                                                        <figure class="pull-left"><img src="/static/images/index/default270x167.jpg"  alt="Pic"></figure>
-                                                        <article class="  pull-left clearfix">
-                                                            <div class="hot">
-                                                                <p>Kavin hotel</p>
-                                                                <p class="stars">
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#"></a>
-                                                                    <a href="#"></a>
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                    </div>
-                                                    <div class="deals clearfix">
-                                                        <figure class="pull-left"><img src="/static/images/index/default270x167.jpg"  alt="Pic"></figure>
-                                                        <article class="  pull-left clearfix">
-                                                            <div class="hot">
-                                                                <p>Kavin hotel</p>
-                                                                <p class="stars">
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#"></a>
-                                                                    <a href="#"></a>
-                                                                </p>
-                                                            </div>
-                                                        </article>
-                                                    </div>
+                                                    <!-- =================== -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                     <h3> 访问发布源地址 <a href="#"></a></h3>
                                     <div class="widget">
                                         <p>如果您对本公寓有兴趣,可访问原地址查看更多详情</p>
@@ -420,9 +367,9 @@
                                     </ul>
                                     <div id="tabs-1" class="tab clearfix" >
                                         <div class="detail clearfix">
-                                            <p>Lorem ipsum venenatis donec sociosqu porta tempor, aptent augue leo dictum nam, senectus dapibus potenti metus velit litora sollicitudin pulvinar pharetra taciti aenean nunc aenean, feugiat scelerisque leo duis netus consequat, lobortis malesuada eleifend ad lacus quisque ut curabitur bibendum laoreet erat nisi malesuada, dictumst arcu platea consequat rutrum purus malesuada, nibh etiam eleifend quis lectus lacinia semper suscipit potenti tellus orci class vivamus nibh taciti, vestibulum justo tristique volutpat praesent scelerisque phasellus eleifend, taciti est taciti consequat donec et class lobortis.</p>
-                                            <p>Feugiat consequat augue pulvinar fusce quis dui diam leo dictumst, fringilla quisque nulla nec blandit lectus aenean lobortis ultrices, fames dolor accumsan ultrices eleifend convallis himenaeos etiam.</p>
-                                            <h2>Room Amenities</h2>
+                                            <p>本区域填写房屋详情</p>
+                                            
+                                            <!-- <h2>Room Amenities</h2>
                                             <ul>
                                                 <li>Restaurants</li>
                                                 <li>Complimenttary Wi-Fi</li>
@@ -449,7 +396,7 @@
                                                 <li>Complimenttary Wi-Fi</li>
                                                 <li>Internet</li>
                                                 <li>Parking</li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
                                     </div>
                                     <!-- <div id="tabs-2" class="tab clearfix" >
@@ -492,8 +439,8 @@
                                                 <iframe width="100%" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
                                             </div>
 
-                                            <h2>Hotel Location</h2>
-                                            <p>Feugiat consequat augue pulvinar fusce quis dui diam leo dictumst, fringilla quisque nulla nec blandit lectus aenean lobortis ultrices, fames dolor accumsan ultrices eleifend convallis himenaeos etiam.</p>
+                                            <h2>本公寓所在详细地址</h2>
+                                            <p>填写详细地址</p>
                                         </div>
                                     </div>
                                     <!-- <div id="tabs-4" class="tab clearfix" >

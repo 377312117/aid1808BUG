@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>个人主页</title>
-        <link rel="icon" href="/static/images/logo.ico" type="images/x-ico"/>
+        <link rel="shortcut icon" href="/static/images/index/favicon.png">
         <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
 
         <link rel="stylesheet" href="/static/css/bootstrap.min.css">
@@ -252,6 +252,7 @@
                 <div class="container-fluid">
                     <div class="col-md-12">
                         <div class="row">
+                            <!-- 对下面内容进行for循环进行展示 -->
                             <div class="first-section">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -265,48 +266,12 @@
                                         <div class="col-md-6">
                                             <div class="right-image">
                                                 <img src="/static/images/first_service.jpg" alt="first service">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="second-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="left-image">
-                                                <img src="/static/images/second_service.jpg" alt="second service">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="right-content">
-                                                <h2>公寓2</h2>
-                                                <p>公寓简介,这里示意公寓的的简单介绍</p>
-                                                <div class="main-btn"><a href="#4">前往官网查看</a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- 这是可以新添的地方 -->
-                            <div class="first-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="left-content">
-                                                <h2>公寓1</h2>
-                                                <p>公寓简介,这里示意公寓的的简单介绍</p>
-                                                <div class="main-btn"><a href="#4">前往官网查看</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="right-image">
-                                                <img src="/static/images/first_service.jpg" alt="first service">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- 每一条浏览记录新增一个模块 -->
                         </div>
                     </div>
@@ -318,186 +283,26 @@
             <div class="content fourth-content">
                 <div class="container-fluid">
                     <div class="row">
+                        <!-- 对下面内容进行循环 -->
                         <div class="col-md-4 col-sm-6">
                             <div class="item">
                                 <div class="thumb">
-                                    <a href="/static/images/first_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
+                                    <!-- <a href="/static/images/first_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
                                         <div class="hover-content">
                                             <h2>Number One</h2>
                                             <p>Quisque sit amet lacus in diam pretium faucibus. Cras vel justo lorem.</p>
                                         </div>
-                                    </div></a>
+                                    </div></a> -->
                                     <div class="image">
-                                        <img src="/static/images/first_item.jpg">
+                                        <a href="/"><img src="/static/images/first_item.jpg"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/second_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Two</h2>
-                                            <p>Donec eget dictum tellus. Curabitur a interdum diam. Nulla vestibulum porttitor porta.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/second_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/third_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Three</h2>
-                                            <p>Cras varius dolor et augue fringilla, eu commodo sapien iaculis.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/third_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/fourth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Four</h2>
-                                            <p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/fourth_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/fifth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Fifth Item</h2>
-                                            <p>Donec commodo, ex nec rutrum venenatis, nisi nisl malesuada magna.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/fifth_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/sixth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Sixth Item</h2>
-                                            <p>Maecenas dapibus neque sed nisl consectetur, id semper nisi egestas.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/sixth_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/seventh_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Seven</h2>
-                                            <p>Etiam aliquet, est id varius fringilla, eros libero pellentesque lectus.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/seventh_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/eight_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Eight</h2>
-                                            <p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/eight_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/ninth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Nine</h2>
-                                            <p>Orci varius natoque penatibus et magnis dis parturient montes.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/ninth_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/fifth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Ten</h2>
-                                            <p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/fifth_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/first_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Eleventh Item</h2>
-                                            <p>Cras varius dolor et augue fringilla, eu commodo sapien iaculis.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/first_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="/static/images/second_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Twelvth Item</h2>
-                                            <p>Etiam tincidunt magna ex, sit amet lobortis felis bibendum id.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="/static/images/second_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>

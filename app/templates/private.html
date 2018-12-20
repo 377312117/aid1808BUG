@@ -20,7 +20,123 @@
         <script src="/static/js/jquery-3.3.1.js"></script>
         <script src="/static/js/md5.js"></script>
         
-    </head>
+        <script>
+            $(function(){
+                // 密码的验证
+                function check_pwd(){
+                    var regpwd = $('#upassword').val()
+                    var pwdExp = new RegExp(/^(\w){6,20}$/)
+                    if(pwdExp.test(regpwd)){
+                        $('#loginprompt').html('您输入的密码可用,请继续输入.')
+                        $('#loginprompt').css('font-size','14px');
+                        $('#loginprompt').css('color','green');
+                        $('#logicpwd').val('1')
+                        return true;
+                    }else{
+                        $('#loginprompt').html('*(6位~20位,不可包含"/"或者空格等特殊字符)')
+                        $('#loginprompt').css('font-size','14px');
+                        $('#loginprompt').css('color','red');
+                        setTimeout("$('#loginprompt').html('')",2000);
+                        $('#logicpwd').val('')
+                        return false;
+                    }
+                };
+                $('#upassword').blur(check_pwd);
+                $('#upassword').focus(function(){
+                    $('#loginprompt').html('*(6位~20位,不可包含"/"或者空格等特殊字符)')
+                    $('#loginprompt').css('font-size','14px');
+                    $('#loginprompt').css('color','white');
+                }); 
+                // 验证电话号码
+                function check_phonenumber(){
+                    var regnumber = $('#uphonenumber').val()
+                    // 设置正则表达式
+                    var numberExp = new RegExp(/^1\d{10}$/);
+                    if(numberExp.test(regnumber)){
+                        $.ajax({
+                            url:'/02-checknumber?phonenumber='+regnumber,
+                            type:'get',
+                            dataType:'json',
+                            success:function(data){
+                                if (data.status == 1){
+                                    $('#numberprompt').html('*该手机号已经被注册!请重新输入');
+                                    $('#numberprompt').css('color',"red");
+                                    $('#numberprompt').css('font-size',"14px");
+                                    $('#logicnumber').val('')
+                                    return false;
+                                }else{
+                                    $('#numberprompt').html('*该手机号未被注册,可继续注册');
+                                    $('#numberprompt').css('color',"green");
+                                    $('#numberprompt').css('font-size',"14px");
+                                    $('#logicnumber').val('1')
+                                    return true;
+                                };
+                            }
+                        });
+                    }else{
+                        $('#numberprompt').html('*请输入您的手机号,符合电话号码格式');
+                        $('#numberprompt').css('color',"red");
+                        $('#numberprompt').css('font-size',"14px");
+                        setTimeout("$('#numberprompt').html('')",2000);
+                        return false;
+                    };
+                };
+                $('#uphonenumber').blur(check_phonenumber);
+                // 验证邮箱
+                function check_email(){
+                    var regemail = $('#uemail').val()
+                    var pattern= new RegExp(/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/);
+                    if(pattern.test(regemail)){
+                        $.ajax({
+                            url:'/03-checkemail?uemail='+regemail,
+                            type:'get',
+                            dataType:'json',
+                            success:function(data){
+                                if (data.status == 1){
+                                    $('#emailprompt').html('*该邮箱已经被注册!请重新输入');
+                                    $('#emailprompt').css('color',"red");
+                                    $('#emailprompt').css('font-size',"14px");
+                                    $('#logicemail').val('');
+                                    return false;
+                                }else{
+                                    $('#emailprompt').html('*该邮箱未被注册,可继续注册');
+                                    $('#emailprompt').css('color',"green");
+                                    $('#emailprompt').css('font-size',"14px");
+                                    $('#logicemail').val('1');
+                                    return true;
+                                };
+                            }
+                        });
+                    }else{
+                        $('#emailprompt').html('*请输入您的邮箱并符合邮箱格式');
+                        $('#emailprompt').css('color',"red");
+                        $('#emailprompt').css('font-size',"14px");
+
+                        setTimeout("$('#emailprompt').html('')",2000);
+                        return false;
+                    };
+                };
+                $('#uemail').blur(check_email);
+                // 设置是否跳转
+                $('#submitinfo').click(function(){
+                    var logicnumber = $('#logicnumber').val()
+                    
+				    var logicemail = $('#logicemail').val()
+                    var logicpwd = $('#logicpwd').val()
+                    console.log('logicnumber',logicnumber)
+                    console.log('logicemail',logicemail)
+                    console.log('logicpwd',logicpwd)
+                    if(logicnumber && logicemail && logicpwd ){
+                        return true;
+                    }else{
+                        return false;   
+                    };
+                });  
+            });
+
+        </script>
+    
+
     <style>
         #geren{
             background-color:rgba(18, 23, 27,0);
@@ -163,8 +279,18 @@
             font-size: 16px;
             color: rgba(245, 240, 240, 0.5);
         }
-    </style>
+        #logicnumber {
+		    visibility: hidden;
+        }
+        #logicemail {
+            visibility: hidden;
+        }
+        #logicpwd {
+            visibility: hidden;
+        }
 
+    </style>
+</head>
 <body>
     
     <div class="sequence">
@@ -226,13 +352,16 @@
                                         </span>
                                     </label>
                                 </div>
-                                <span class="note">账户密码:</span><input type="password" id='password' class='input_control' name='upwd' placeholder="请在这里修改密码"><br>
-                                <span class='note'>手机号  :</span> <input type="number" id='phonenumber' class='input_control' name="phonenumber" value="{{user.phonenumber}}"><br>
-                                <span class='note'>邮箱  :</span> <input type="email" name="email" value="{{user.email}}" class='input_control' ><br>
+                                <span class="note">账户密码:</span><input type="password" id='upassword' class='input_control' name='upwd' placeholder="请在这里修改密码"><br>
+                                <div id='loginprompt'></div>
+                                <span class='note'>手机号:</span> <input type="number" id='uphonenumber' class='input_control' name="phonenumber" value="{{user.phonenumber}}"><br>
+                                <div id="numberprompt"></div>
+                                <span class='note'>邮箱  :</span> <input type="email" name="email" id= 'uemail' value="{{user.email}}" class='input_control' ><br>
+                                <div id='emailprompt'></div>
                                 <span class="note">个人简介: </span><textarea name="textarea" id="textarea" cols="42" rows="10" placeholder="请输入您的简介">{{user.selfinfo}}</textarea><br>
                                 <!-- 将值赋予下面隐藏输入框.传回给服务端 -->
 			                    <div class='hidden'><input type="text" id='hidden' name='upassword'></div>
-                                <button type="submit" name='submit' value='提交修改' id='submitinfo' class='getvalue'>提交修改</button>
+                                <input type="submit" name='submit' value='提交修改' id='submitinfo' class='getvalue'>
                             </form>
                             </div>
                         <div class="main-btn"><a href="#3">查看您的浏览记录</a></div>
@@ -354,6 +483,9 @@
           <div class="content">
               <p>Copyright &copy; Engineering team of BUG </p>
           </div>
+            <input type="text" id="logicnumber" >
+            <input type="text" id="logicemail" >
+            <input type="text" id="logicpwd" >
         </div>
 
     
@@ -412,8 +544,8 @@
          var sFileName = $(this).val().substr((index+1));
         $("#rightText").html(sFileName);
      });
-     $('.getvalue').bind('click',function(){
-        var upassword = $("#password").val();
+     $('#submitinfo').bind('click',function(){
+        var upassword = $("#upassword").val();
         if(upassword){
             var md5_upassword=hex_md5(upassword);
             console.log(md5_upassword);

@@ -74,10 +74,7 @@ def index_detail():
         return render_template('/index_detail.html',uname=uname)
 
 
-# @main.route('/gaode',methods=['GET','POST'])
-# def gaode():
-#     '''用于抵达测试地图页'''
-#     return render_template('/api_finall.html')
+
 
 
 

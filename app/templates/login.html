@@ -54,6 +54,19 @@
 		font-size: 16px;
 		color: rgba(245, 240, 240, 0.5);
 	}
+	#logicname {
+		visibility: hidden;
+	}
+	#logicnumber {
+		visibility: hidden;
+	}
+	#logicemail {
+		visibility: hidden;
+	}
+	#logicpwd {
+		visibility: hidden;
+	}
+
 	</style>
 	<!-- 引入外部js文件 -->
 	<script src="/static/js/jquery-3.3.1.js"></script>
@@ -165,11 +178,14 @@
 								$('#regunameprompt').html('*该用户名已经注册!请重新输入');
 								$('#regunameprompt').css('color',"red");
 								$('#regunameprompt').css('font-size',"14px");
+								$('#logicname').val('');
 								return false;
 							}else{
 								$('#regunameprompt').html('*该用户名未被注册,可继续注册');
 								$('#regunameprompt').css('color',"green");
 								$('#regunameprompt').css('font-size',"14px");
+								$('#logicname').val('1')
+								console.log(typeof($('#logicname').val()))
 								return true;
 							};
 						}
@@ -197,11 +213,13 @@
 								$('#numberprompt').html('*该手机号已经被注册!请重新输入');
 								$('#numberprompt').css('color',"red");
 								$('#numberprompt').css('font-size',"14px");
+								$('#logicnumber').val('')
 								return false;
 							}else{
 								$('#numberprompt').html('*该手机号未被注册,可继续注册');
 								$('#numberprompt').css('color',"green");
 								$('#numberprompt').css('font-size',"14px");
+								$('#logicnumber').val('1')
 								return true;
 							};
 						}
@@ -211,6 +229,7 @@
 					$('#numberprompt').css('color',"red");
 					$('#numberprompt').css('font-size',"14px");
 					setTimeout("$('#numberprompt').html('')",2000);
+					$('#logicnumber').val('')
 					return false;
 				};
 			};
@@ -229,11 +248,13 @@
 								$('#emailprompt').html('*该邮箱已经被注册!请重新输入');
 								$('#emailprompt').css('color',"red");
 								$('#emailprompt').css('font-size',"14px");
+								$('#logicemail').val('');
 								return false;
 							}else{
 								$('#emailprompt').html('*该邮箱未被注册,可继续注册');
 								$('#emailprompt').css('color',"green");
 								$('#emailprompt').css('font-size',"14px");
+								$('#logicemail').val('1');
 								return true;
 							};
 						}
@@ -243,6 +264,7 @@
 					$('#emailprompt').css('color',"red");
 					$('#emailprompt').css('font-size',"14px");
 					setTimeout("$('#emailprompt').html('')",2000);
+					$('#logicemail').val('');
 					return false;
 				};
 			};
@@ -281,12 +303,14 @@
 					$('#regrepwdprompt').html('重复密码一致,请点击注册!')
 					$('#regrepwdprompt').css('font-size','14px');
 					$('#regrepwdprompt').css('color','green');
+					$('#logicpwd').val('1');
 					return true;
 				}else if(regpwd != regrepwd) {
 					$('#regrepwdprompt').html('重复密码不一致,请重新输入密码!')
 					$('#regrepwdprompt').css('font-size','14px');
 					$('#regrepwdprompt').css('color','red');
 					$('#regrepwd1').val('');
+					$('#logicpwd').val('');
 					return false;
 					// 设置延迟执行
 					setTimeout("$('#regrepwdprompt').html('')",2000);
@@ -295,7 +319,11 @@
 			$('#regrepwd1').blur(check_repassword);
 			// 验证注册密码
 			$('#registersubmit').click(function(){
-				if(check_register&&check_phonenumber&&check_email&&check_repassword){
+				var logicname = $('#logicname').val()
+				var logicnumber = $('#logicnumber').val()
+				var logicemail = $('#logicemail').val()
+				var logicpwd = $('#logicpwd').val()
+				if(logicname && logicnumber && logicemail && logicpwd ){
 					var uname = $('#registername').val()
 					var regnumber = $('#registernumber').val()
 					var regemail = $('#registeremail').val()
@@ -422,6 +450,10 @@
 		<p id='copy'>Copyright &copy; Engineering team of BUG</p>
 	</div>
 <div style="text-align:center;">
+<input type="text" id="logicname" >
+<input type="text" id="logicnumber" >
+<input type="text" id="logicemail" >
+<input type="text" id="logicpwd" >
 
 </div>
 <div>

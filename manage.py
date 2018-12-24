@@ -9,6 +9,8 @@ from flask_migrate import Migrate, MigrateCommand
 # prompt_bool是用于删除数据库之前的提示,
 from flask_script import Manager, Shell, prompt_bool
 
+from app.main.getdata import get_lastdata
+
 
 
 from app import create_app,db
@@ -40,7 +42,16 @@ def drop():
         db.drop_all()
         return '数据库删除完成'
     return '删除需谨慎！'
- 
+
+
+# 爬取数据装入数据库
+@manager.command
+def crawling(): 
+    print('获取数据中')
+    get_lastdata()
+    print('获取完成')
+
 if __name__ == '__main__':
     # 若没带命令,则会进入测试服务器环境(127.0.0.1:5000),可指定ip(-h xxxx)和端口(-p xxxx)
+    
     manager.run()

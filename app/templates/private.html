@@ -382,6 +382,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <!-- 对下面内容进行for循环进行展示 -->
+                            {% for house in params.histories %}
                             <div class="first-section">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -400,6 +401,7 @@
                                     </div>
                                 </div>
                             </div>
+                            {% endfor %}
                             <!-- 这是可以新添的地方 -->
                             <!-- 每一条浏览记录新增一个模块 -->
                         </div>
@@ -413,6 +415,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <!-- 对下面内容进行循环 -->
+                        {% for house in params.collection %}
                         <div class="col-md-4 col-sm-6">
                             <div class="item">
                                 <div class="thumb">
@@ -428,9 +431,8 @@
                                 </div>
                             </div>
                         </div>
-
-
-
+                        {% endfor x%}
+                        <!-- 截止于此处 -->
 
                     </div>
                 </div>
@@ -483,9 +485,9 @@
           <div class="content">
               <p>Copyright &copy; Engineering team of BUG </p>
           </div>
-            <input type="text" id="logicnumber" >
-            <input type="text" id="logicemail" >
-            <input type="text" id="logicpwd" >
+            <input type="text" id="logicnumber" value="1" >
+            <input type="text" id="logicemail" value="1" >
+            <input type="text" id="logicpwd" value="1" >
         </div>
 
     

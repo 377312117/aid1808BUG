@@ -5,7 +5,7 @@
     2.构建SQLALchemy的应用
 
 """
-from flask import Flask
+from flask import Flask,render_template
 from flask_sqlalchemy import SQLAlchemy
 import pymysql
 from werkzeug.routing import BaseConverter
@@ -29,10 +29,10 @@ def create_app():
     app = Flask(__name__)
 
     # 设置启动模式为调试模式
-    app.config['DEBUG'] = True  # app.run(debug=True)
+    app.config['DEBUG'] = True # app.run(debug=True)
 
     # 配置数据库的连库字符串
-    dbconf = f"mysql+pymysql://root:123456@localhost:3306/bugproject"
+    dbconf = "mysql+pymysql://root:123456@localhost:3306/bugproject"
     app.config['SQLALCHEMY_DATABASE_URI'] = dbconf
 
     # 配置自动提交的问题
@@ -67,6 +67,8 @@ def create_app():
 
 
     return app
+
+
 
     
 

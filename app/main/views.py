@@ -13,6 +13,7 @@ from sqlalchemy import func, or_
 from . import main
 from .. import db,login_required
 from ..models import *
+from .getdata import get_lastdata
 
 
 
@@ -20,13 +21,13 @@ from ..models import *
 @main.errorhandler(404)
 def page_not_found(e):
     '''用于无法找到页面时的404提示'''
-    return render_template('/404.html'),404
+    return render_template('404.html'), 404
 
 
 @main.errorhandler(500)
 def internal_server_error(e):
     '''用于服务器出现错误时的提示'''
-    return render_template('/500.html'), 500
+    return render_template('500.html'), 500
 
 @main.route('/',methods=['GET','POST'])
 @login_required
@@ -35,13 +36,13 @@ def index():
     if session.get('uname','') and session.get('upwd',''):
         uname = session.get('uname','')
         print('存在session信息,直接登录')
-        return render_template('/index.html',uname=uname)
     elif request.cookies.get('uname','') and request.cookies.get('upwd',''):
         session['uname']=request.cookies.get('uname','')
         session['upwd']=request.cookies.get('upwd','')
         uname = session['uname']
         print('存在cookies信息,直接登录')
-        return render_template('/index.html',uname=uname)
+    houses = Houses.query.all()
+    return render_template('/index.html',params=locals())
 
 @main.route('/index_list',methods=['GET','POST'])
 @login_required
@@ -72,6 +73,7 @@ def index_detail():
         uname = session['uname']
         print('存在cookies信息,直接登录')
         return render_template('/index_detail.html',uname=uname)
+
 
 
 

@@ -288,6 +288,9 @@
         #logicpwd {
             visibility: hidden;
         }
+        .hover-content{
+             cursor:pointer;
+        }
 
     </style>
 </head>
@@ -390,7 +393,7 @@
                                             <div class="left-content">
                                                 <h2>公寓1</h2>
                                                 <p>公寓简介,这里示意公寓的的简单介绍</p>
-                                                <div class="main-btn"><a href="#4">前往官网查看</a></div>
+                                                <div class="main-btn"><a href="/">前往官网查看</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -419,12 +422,14 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="item">
                                 <div class="thumb">
-                                    <!-- <a href="/static/images/first_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
+                                    <!-- <a href="/static/images/first_big_item.jpg" data-lightbox="image-1">-->
+                                        <div class="hover-effect"> 
                                         <div class="hover-content">
                                             <h2>Number One</h2>
                                             <p>Quisque sit amet lacus in diam pretium faucibus. Cras vel justo lorem.</p>
                                         </div>
-                                    </div></a> -->
+                                    </div>
+                                <!-- </a> -->
                                     <div class="image">
                                         <a href="/"><img src="/static/images/first_item.jpg"></a>
                                     </div>
@@ -557,6 +562,11 @@
         }
     }
     );
+    $('.hover-content').bind('click',function(){
+            window.location.href="/"
+    })
+    
+    
     </script>
 </body>
 </html>

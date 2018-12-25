@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="78aa35a0-1ba0-40c5-98d3-a740e85498d7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/bootstrap-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/fontAwesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/fontAwesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/fonts/flexslider-icon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/index/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/index/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/index/elastislide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/index/elastislide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/index/flexslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/index/flexslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/index/ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/index/ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/index/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/index/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/index/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/index/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/light-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/light-box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/templatemo-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/templatemo-main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/dinpro-medium_0-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-light-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/gotham-rounded-medium_0-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-bold-webfont-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regular_1-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/proximanova-regularitalic_1-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/fonts/pt_serif-web-regular-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/html/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/html/booking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/html/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/html/confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/html/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/html/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/html/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/html/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/html/travel_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/html/travel_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/html/travel_grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/html/travel_grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/html/travel_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/html/travel_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/QQ.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/QQ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/about_image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/about_image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/author_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/author_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/eight_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/eight_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/eight_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/eight_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/fifth_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/fifth_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/fifth_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/fifth_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/fifth_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/fifth_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/first_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/first_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/first_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/first_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/first_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/first_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/first_service.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/first_service.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/fourth_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/fourth_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/fourth_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/fourth_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/fourth_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/fourth_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/i1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/i1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/i2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/i2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/i3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/i3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/1500-hotel-john-f-berlin-suite.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/1500-hotel-john-f-berlin-suite.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Brazil-citybeach.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Brazil-citybeach.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities_Blue_buildings_042809_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities_Blue_buildings_042809_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities_Festive_town_042009_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities_Festive_town_042009_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities_Saudi_Arabia_Riyadh_city_night_042169_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities_Saudi_Arabia_Riyadh_city_night_042169_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities_Skyscrapers_Singapore_042358_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities_Skyscrapers_Singapore_042358_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities__039053_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities__039053_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities__040381_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities__040381_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities__040382_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities__040382_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities__040691_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities__040691_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Cities___Atractions_041290_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Cities___Atractions_041290_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Header-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Header-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Headertop-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Headertop-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Heading-border.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Heading-border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Hotel_Pool_and_Bridge.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Hotel_Pool_and_Bridge.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/1500-hotel-john-f-berlin-suite.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/1500-hotel-john-f-berlin-suite.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Blue_buildings_042809_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Blue_buildings_042809_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Festive_town_042009_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Festive_town_042009_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Saudi_Arabia_Riyadh_city_night_042169_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Saudi_Arabia_Riyadh_city_night_042169_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Skyscrapers_Singapore_042358_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities_Skyscrapers_Singapore_042358_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities__039053_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities__039053_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities__040381_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities__040381_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities__040382_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities__040382_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities__040691_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities__040691_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Cities___Atractions_041290_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Cities___Atractions_041290_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Hotel_Pool_and_Bridge.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Hotel_Pool_and_Bridge.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/SHAR-Bg-Hotel-Lobby.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/SHAR-Bg-Hotel-Lobby.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/SetHeight800-Kempinski-Hotel-Adriatic-Presidential-Suite-Terrace-View.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/SetHeight800-Kempinski-Hotel-Adriatic-Presidential-Suite-Terrace-View.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/Sunway-Hotel-Hanoi-31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/Sunway-Hotel-Hanoi-31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Brazil_Night_city_beach_in_Brazil_022171_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Brazil_Night_city_beach_in_Brazil_022171_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_China_Panorama_of_Hong_Kong_035801_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_China_Panorama_of_Hong_Kong_035801_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Germany_Cologne_Cathedral_At_Dusk_036692_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Germany_Cologne_Cathedral_At_Dusk_036692_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Libya_Tripoli_Libya_028768_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Libya_Tripoli_Libya_028768_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Kazan_Cathedral_034617_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Kazan_Cathedral_034617_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Russian_River_022083_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Russian_River_022083_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Saint_Basil_034618_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Saint_Basil_034618_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Summer_in_Moscow_030339_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_Summer_in_Moscow_030339_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_The_capital_of_Russia_Moscow_022082_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_The_capital_of_Russia_Moscow_022082_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_View_of_the_Kremlin__Moscow_022079_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Russia_View_of_the_Kremlin__Moscow_022079_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Thailand_Bangkok_at_night_035315_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Thailand_Bangkok_at_night_035315_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World_Thailand_Phuket_035177_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World_Thailand_Phuket_035177_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___China_Tea_Palace_in_Shanghai_034479_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___China_Tea_Palace_in_Shanghai_034479_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___China__039961_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___China__039961_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___China__040541_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___China__040541_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy_Monte_Rosa_034447_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy_Monte_Rosa_034447_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy_Street_Rome_Italy_042292_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy_Street_Rome_Italy_042292_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy_Venice_Canal_034449_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy_Venice_Canal_034449_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy__039962_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Italy__039962_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Russia_Mother_Russia_022087_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Russia_Mother_Russia_022087_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Russia_The_bridge_in_Moscow_037399_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Russia_The_bridge_in_Moscow_037399_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Thailand_Thailand_007982_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Thailand_Thailand_007982_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___Thailand_Thailand_walk_007984_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___Thailand_Thailand_walk_007984_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___USA_Street_Chicago_042581_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___USA_Street_Chicago_042581_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___USA__039646_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___USA__039646_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/World___USA__040450_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/World___USA__040450_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/hotel-03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/hotel-03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/hotel-08.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/hotel-08.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Images/index_500.gif.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Images/index_500.gif.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/SHAR-Bg-Hotel-Lobby.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/SHAR-Bg-Hotel-Lobby.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/SetHeight800-Kempinski-Hotel-Adriatic-Presidential-Suite-Terrace-View.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/SetHeight800-Kempinski-Hotel-Adriatic-Presidential-Suite-Terrace-View.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Sunway-Hotel-Hanoi-31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/Sunway-Hotel-Hanoi-31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/USA_Street_Chicago.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/USA_Street_Chicago.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Brazil_Night_city_beach_in_Brazil_022171_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Brazil_Night_city_beach_in_Brazil_022171_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_China_Panorama_of_Hong_Kong_035801_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_China_Panorama_of_Hong_Kong_035801_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Germany_Cologne_Cathedral_At_Dusk_036692_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Germany_Cologne_Cathedral_At_Dusk_036692_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Libya_Tripoli_Libya_028768_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Libya_Tripoli_Libya_028768_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Russia_Kazan_Cathedral_034617_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Russia_Kazan_Cathedral_034617_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Russia_Russian_River_022083_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Russia_Russian_River_022083_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Russia_Saint_Basil_034618_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Russia_Saint_Basil_034618_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Russia_Summer_in_Moscow_030339_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Russia_Summer_in_Moscow_030339_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Russia_The_capital_of_Russia_Moscow_022082_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Russia_The_capital_of_Russia_Moscow_022082_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Russia_View_of_the_Kremlin__Moscow_022079_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Russia_View_of_the_Kremlin__Moscow_022079_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Thailand_Bangkok_at_night_035315_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Thailand_Bangkok_at_night_035315_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World_Thailand_Phuket_035177_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World_Thailand_Phuket_035177_.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___China_Tea_Palace_in_Shanghai_034479_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___China_Tea_Palace_in_Shanghai_034479_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___China__039961_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___China__039961_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___China__040541_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___China__040541_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Italy_Monte_Rosa_034447_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Italy_Monte_Rosa_034447_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Italy_Street_Rome_Italy_042292_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Italy_Street_Rome_Italy_042292_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Italy_Venice_Canal_034449_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Italy_Venice_Canal_034449_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Italy__039962_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Italy__039962_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Russia_Mother_Russia_022087_14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Russia_Mother_Russia_022087_14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Russia_The_bridge_in_Moscow_037399_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Russia_The_bridge_in_Moscow_037399_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Thailand_Thailand_007982_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Thailand_Thailand_007982_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___Thailand_Thailand_walk_007984_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___Thailand_Thailand_walk_007984_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___USA_Street_Chicago_042581_16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___USA_Street_Chicago_042581_16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___USA__039646_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___USA__039646_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/World___USA__040450_18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/World___USA__040450_18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/acordian-hbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/acordian-hbg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/ad-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/ad-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/arrow-little.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/arrow-little.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/border.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/button.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/calender-left-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/calender-left-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/calender-right-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/calender-right-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/call.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/call.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/card.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/card.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/clander.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/clander.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/comas.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/comas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/contact_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/contact_img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img6.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img7.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-img8.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-img8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-next.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/crosal-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/crosal-right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/d-button.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/d-button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/d-buttonup.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/d-buttonup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/down-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/down-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/drop-btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/drop-btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/errow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/errow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/facebook-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/facebook-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/favicon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/favicon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/fcility_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/fcility_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/fcility_tick.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/fcility_tick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/flight.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/flight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/footer-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/footer-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/glyphicons-halflings-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/glyphicons-halflings-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/glyphicons-halflings.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/glyphicons-halflings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/google.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/google.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/gotop.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/gotop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/grid_btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/grid_btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/grid_btn_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/grid_btn_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/header-border.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/header-border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/hotdeal-pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/hotdeal-pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/hotel-03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/hotel-03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/hotel-08.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/hotel-08.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/hotel.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/hotel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/index_500.gif.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/index_500.gif.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/input0bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/input0bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/input_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/input_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/left-small-errow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/left-small-errow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/left.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/left_errow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/left_errow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/li-border.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/li-border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/li-sprator.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/li-sprator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/li-sprator2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/li-sprator2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/like-heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/like-heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/link-btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/link-btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/link-btn2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/link-btn2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/list_btn.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/list_btn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/list_btn_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/list_btn_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/location.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/location.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/location2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/location2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/location2_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/location2_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/logo2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/monday-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/monday-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/nav-bg-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/nav-bg-black.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/next-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/next-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/nexthover-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/nexthover-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/noti_slide.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/noti_slide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/noti_slide2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/noti_slide2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/noti_slide3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/noti_slide3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/offerpic-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/offerpic-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/offerpic-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/offerpic-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/offerpic-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/offerpic-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/offerpic-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/offerpic-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/prefrnce.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/prefrnce.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/prefrnce_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/prefrnce_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/prev-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/prev-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/prevhover-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/prevhover-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/requaired-dot.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/requaired-dot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/responsive.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/responsive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/review.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/review.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/review_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/review_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/right.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/right_errow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/right_errow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/rss.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/rss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/search2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/search2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/star-blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/star-blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/star.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/star.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/summery.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/summery.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/summery_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/summery_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/sunday-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/sunday-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/temp.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/temp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/test-next.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/test-next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/test-prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/test-prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/testimonial-pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/testimonial-pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/top-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/top-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/tweet-l.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/tweet-l.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/tweet-r.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/tweet-r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/tweet.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/tweet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/twitter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/index/vacation.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/index/vacation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/mini_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/mini_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/ninth_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/ninth_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/ninth_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/ninth_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/second_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/second_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/second_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/second_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/second_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/second_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/second_service.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/second_service.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/seventh_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/seventh_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/seventh_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/seventh_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/sixth_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/sixth_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/sixth_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/sixth_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/third_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/third_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/third_big_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/third_big_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/third_item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/third_item.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/tick.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/tick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/weibo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/weibo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/images/weixin.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/weixin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/gaode_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/gaode_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jcarousellite_1.0.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jcarousellite_1.0.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery-1.7.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery-1.9.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery-1.9.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.carouFredSel-6.0.4-packed.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.carouFredSel-6.0.4-packed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.cycle.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.cycle.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.elastislide.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.elastislide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.flexslider-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.flexslider-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.flexslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.flexslider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.isotope.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.isotope.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.jcarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.jcarousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.simpleWeather-2.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.simpleWeather-2.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.tinyscrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.tinyscrollbar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.zweatherfeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.zweatherfeed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/jquery.zweatherfeed.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/jquery.zweatherfeed.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/index/localWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/index/localWeather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/vendor/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/vendor/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/vendor/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/vendor/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/vendor/jquery-1.11.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/vendor/jquery-1.11.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/vendor/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/vendor/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/private.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/private.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/test.html" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8280">
+              <caret line="360" column="42" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/main/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+              <folding>
+                <element signature="e#34#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
+              <folding>
+                <element signature="e#96#1245#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/app/main/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="773" />
+    <option name="y" value="16" />
+    <option name="width" value="668" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="demo" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="demo" />
+      <option name="target" value="$PROJECT_DIR$/app/__init__.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78aa35a0-1ba0-40c5-98d3-a740e85498d7" name="Default" comment="" />
+      <created>1545356248733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545356248733</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32971507" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1482808" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8280">
+          <caret line="360" column="42" selection-start-line="360" selection-start-column="36" selection-end-line="360" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#96#1245#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7843">
+          <caret line="341" column="58" lean-forward="true" selection-start-line="341" selection-start-column="58" selection-end-line="341" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#96#1245#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8280">
+          <caret line="360" column="42" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
+          <folding>
+            <element signature="e#96#1245#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

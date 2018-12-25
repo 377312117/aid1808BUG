@@ -3,6 +3,7 @@
 '''
 
 import os
+import random
 from datetime import datetime
 import json
 
@@ -41,7 +42,26 @@ def index():
         session['upwd']=request.cookies.get('upwd','')
         uname = session['uname']
         print('存在cookies信息,直接登录')
-    houses = Houses.query.all()
+
+    # Alex：如果查询历史中有信息，就根据信息查询
+    price = session.get("price","")
+    district = session.get("district","")
+    # zzx:修改为下面这行即可统计数据
+    count = Houses.query.count()
+    # print('count:',count)
+
+    if price or district:
+        pass
+    else:
+        l1 = [random.randint(1,count//2) for _ in range(4)]
+        houses1 = Houses.query.filter(Houses.id.in_(l1)).all()
+
+        l2 = [random.randint(1, count//2) for _ in range(8)]
+        houses2 = Houses.query.filter(Houses.id.in_(l2)).all()
+
+        l3 = [random.randint(count//2,count) for _ in range(5)]
+        houses3 = Houses.query.filter(Houses.id.in_(l3)).all()
+
     return render_template('/index.html',params=locals())
 
 @main.route('/index_list',methods=['GET','POST'])

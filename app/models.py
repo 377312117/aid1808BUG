@@ -56,8 +56,6 @@ class Houses(db.Model):
     price = db.Column(db.Integer,nullable=False)
     # 支付方式
     pay_method = db.Column(db.String(100))
-    # 最后更新时间
-    lasttime = db.Column(db.String(120),nullable=False)
     # 出租方式
     rent_pattern = db.Column(db.String(200))
     # 房屋样式
@@ -74,37 +72,37 @@ class Houses(db.Model):
     village = db.Column(db.String(200))
     # 详细地址
     detailed_address = db.Column(db.String(200),nullable=False)
-     # 朝向
-    orientation = db.Column(db.String(200))
     #  电话
     contactnum = db.Column(db.BigInteger)
+    # 经纪人
+    contacts = db.Column(db.String(200))
     # 描述1
     house_description1 = db.Column(db.Text(1000),nullable=False)
     # 描述2
     house_description2 = db.Column(db.Text(1000))
     # 链接地址
-    url = db.Column(db.String(200),nullable=False)
+    url = db.Column(db.Text(2000),nullable=False)
     # 照片名字
-    picture_name = db.Column(db.Text(1200), default=r'default')
+    picture_name = db.Column(db.Text(2000), default=r'default')
     # 多对多关系
     history_users = db.relationship('Users',secondary='history',lazy='dynamic',backref=db.backref('history_houses',lazy='dynamic'))
     favor_users = db.relationship('Users',secondary='favor',lazy='dynamic',backref=db.backref('favor_houses',lazy='dynamic'))
 
-    def __init__(self, title,price,pay_method,lasttime,rent_pattern,room_type,decoration_method,district,region,village,detailed_adress,orientation,contactnum,house_description1,house_description2,url,picture_name):
+    def __init__(self, title,price,pay_method,rent_pattern,room_type,room_area,decoration_method,district,region,village,contacts,detailed_adress,orientation,contactnum,house_description1,house_description2,url,picture_name):
         # 用于实例对象进行赋值
         self.title = title
         self.price = price
         self.pay_method = pay_method
-        self.lasttime=lasttime
         self.rent_pattern = rent_pattern
         self.room_type = room_type
+        self.room_area = room_type
         self.decoration_method = decoration_method
         self.district = district
         self.region = region
         self.village = village
         self.detailed_adress = detailed_adress
-        self.orientation = orientation
         self.contactnum = contactnum
+        self.contacts = contacts
         self.house_description1 = house_description1
         self.house_description2 = house_description2
         self.url = url
@@ -121,7 +119,6 @@ class Houses(db.Model):
             'title':self.title,
             'price':self.price,
             'pay_method':self.pay_method,
-            'lasttime':self.lasttime,
             'rent_pattern':self.rent_pattern,
             'room_type':self.room_type,
             'decoration_method':self.decoration_method,
@@ -129,8 +126,8 @@ class Houses(db.Model):
             'region':self.region,
             'village':self.village,
             'detailed_adress':self.detailed_adress,
-            'orientation':self.orientation,
             'contactnum':self.contactnum,
+            'contacts':self.contacts,
             'house_description1':self.house_description1,
             'house_description2':self.house_description2,
             'url':self.url
@@ -174,4 +171,4 @@ class Favor(db.Model):
 
 
     
- 
+

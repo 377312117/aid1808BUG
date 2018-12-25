@@ -8,6 +8,7 @@
 from flask_migrate import Migrate, MigrateCommand
 # prompt_bool是用于删除数据库之前的提示,
 from flask_script import Manager, Shell, prompt_bool
+import os
 
 from app.main.getdata import get_lastdata
 
@@ -51,7 +52,20 @@ def crawling():
     get_lastdata()
     print('获取完成')
 
+# 删除下载文件夹中所有的照片
+
+@manager.command
+def del_downloads():
+    abspath = os.path.dirname(os.path.abspath(__file__))
+    path =  abspath+ r'/static/images/downloads/'
+    ls = os.listdir(path)
+    for i in ls:
+        c_path = os.path.join(path, i)
+        if os.path.isdir(c_path):
+            del_downloads(c_path)
+        else:
+            os.remove(c_path)
+
 if __name__ == '__main__':
     # 若没带命令,则会进入测试服务器环境(127.0.0.1:5000),可指定ip(-h xxxx)和端口(-p xxxx)
-    
     manager.run()

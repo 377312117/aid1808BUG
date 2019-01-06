@@ -59,6 +59,9 @@
                 #searchadd{
                     width: 175px;
                 }
+                .like:hover{
+                    cursor: pointer;
+                }
             </style>
              <!-- Scripts -->
 				<script src="/static/js/index/jquery-1.7.1.min.js"></script>
@@ -100,15 +103,15 @@
 
                                     <!-- 搜索功能 -->
 					                <div class="span4 srch">
-                                        <form>
-                                            <input type="text" name="search" placeholder="请输入您需要查找的区域" id="searchadd">
+                                        <form action='/index_list' method="POST" >
+                                            <input type="text" name="Location" placeholder="请输入您需要查找的区域" id="searchadd">
                                             <input type="submit" value="">
                                         </form>
 					                </div>
 					                <div class="span3" id="login-link">
 					                	<!-- <div class="social-nav">
 					                    </div> -->
-                                        <a href="/private" class="sign-in" >{{uname}}的个人主页</a>
+                                        <a href="/private" class="sign-in" >{{params.uname}}的个人主页</a>
                                         <a href="/cancel" class="sign-in">退出</a>
 					                </div>
 					            </div>
@@ -166,7 +169,7 @@
                                                 <li><a href="index3.html">Home 3 </a></li>
                                             </ul> -->
                                         </li>
-                                        <li><a href="/index_list">房屋详情</a></li>
+                                        <li><a href="/index_list?com=default">房屋详情</a></li>
                                        	  <!-- <ul class="clearfix">
                                                 <li><a href="travel_grid.html">Travel Grid</a></li>
                                                 <li><a href="travel_list.html">Travel list</a></li>
@@ -315,21 +318,16 @@
                                                 <div class="overview">
                                                     <!-- 此处可以进行for循环展示 -->
                                                     <!-- ================= -->
+                                                    {% for hou in params.houses %}
                                                     <div class="deals clearfix">
-                                                        <figure class="pull-left"><img src="/static/images/index/default270x167.jpg"  alt="Pic"></figure>
+                                                        <figure class="pull-left"><img src="/static/images/downloads/{{hou.picture_name.split(';')[1]}}.jpg"  alt="Pic"></figure>
                                                         <article class="  pull-left clearfix">
                                                             <div class="hot">
-                                                                <p>Kavin hotel</p>
-                                                                <p class="stars">
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#" class="blue_star"></a>
-                                                                    <a href="#"></a>
-                                                                    <a href="#"></a>
-                                                                </p>
+                                                                <a href="/index_detail?id={{hou.id}}">{{hou.village}}</a>
                                                             </div>
                                                         </article>
                                                     </div>
+                                                    {% endfor %}
                                                     <!-- =================== -->
                                                 </div>
                                             </div>
@@ -338,7 +336,7 @@
                                     <h3> 访问发布源地址 <a href="#"></a></h3>
                                     <div class="widget" id="widget">
                                         <p>如果您对本公寓有兴趣,可访问原地址查看更多详情</p>
-                                        <a class="call" href="#">点击跳转</a>
+                                        <a class="call" href="{{params.house.url}}">点击跳转</a>
                                     </div>
 
                                 </div>
@@ -348,14 +346,12 @@
                                 <div class="carousel_wrap">
                                     <div id="carousel-wrapper">
                                         <div id="carousel_two" class="cool-carousel">
-                                            <span id="image1"><img src="/static/images/index/default270x167.jpg"  alt=""/></span>
-                                            <span id="image2"><img src="/static/images/index/default270x167.jpg"  alt="" /></span>
-                                            <span id="image3"><img src="/static/images/index/default270x167.jpg"  alt="" /></span>
-                                            <span id="image4"><img src="/static/images/index/default270x167.jpg"  alt=""/></span>
-                                            <span id="image5"><img src="/static/images/index/default270x167.jpg"  alt=""/></span>
-                                            <span id="image6"><img src="/static/images/index/default270x167.jpg"  alt="" /></span>
-                                            <span id="image7"><img src="/static/images/index/default270x167.jpg"  alt="" /></span>
-                                            <span id="image8"><img src="/static/images/index/default270x167.jpg"  alt=""/></span>
+                                            <span id="image1"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[1]}}.jpg"  alt=""/></span>
+                                            <span id="image2"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[2]}}.jpg"  alt="" /></span>
+                                            <span id="image3"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[3]}}.jpg"  alt="" /></span>
+                                            <span id="image4"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[4]}}.jpg"  alt=""/></span>
+                                            <span id="image5"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[5]}}.jpg"  alt=""/></span>
+                                            <span id="image6"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[6]}}.jpg"  alt="" /></span>
                                         </div>
                                         <a href="#" class="prev"></a><a href="#" class="next"></a>
                                     </div>
@@ -363,14 +359,12 @@
                                     <div class="carousal-bottom">
                                         <div id="thumbs-wrapper">
                                             <div id="thumbs">
-                                                <a href="#image1" class="selected"><img src="/static/images/index/default270x167.jpg"   alt="" /></a>
-                                                <a href="#image2"><img src="/static/images/index/default270x167.jpg"  alt="" /></a>
-                                                <a href="#image3"><img src="/static/images/index/default270x167.jpg"  alt=""/></a>
-                                                <a href="#image4"><img src="/static/images/index/default270x167.jpg"  alt=""/></a>
-                                                <a href="#image5"><img src="/static/images/index/default270x167.jpg"   alt=""/></a>
-                                                <a href="#image6"><img src="/static/images/index/default270x167.jpg"   alt=""/></a>
-                                                <a href="#image7"><img src="/static/images/index/default270x167.jpg"  alt=""/></a>
-                                                <a href="#image8"><img src="/static/images/index/default270x167.jpg"  alt=""/></a>
+                                                <a href="#image1" class="selected"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[1]}}.jpg"   alt="" /></a>
+                                                <a href="#image2"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[2]}}.jpg"  alt="" /></a>
+                                                <a href="#image3"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[3]}}.jpg"  alt=""/></a>
+                                                <a href="#image4"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[4]}}.jpg"  alt=""/></a>
+                                                <a href="#image5"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[5]}}.jpg"   alt=""/></a>
+                                                <a href="#image6"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[6]}}.jpg"   alt=""/></a>
                                             </div>
                                             <a id="prev" href="#"></a>
                                             <a id="next" href="#"></a>
@@ -383,13 +377,22 @@
                                 <div id="tabs_two">
                                     <ul class="clearfix">
                                         <li><a href="#tabs-1" class="one">详情介绍</a></li>
-                                        <!-- <li><a href="#tabs-2" class="two">Preferences</a></li> -->
+                                        <li><a href="#tabs-2" class="two">房屋配套</a></li>
                                         <li><a href="#tabs-3" class="three">所在位置</a></li>
                                         <!-- <li><a href="#tabs-4" class="four">Reviews</a></li> -->
                                     </ul>
                                     <div id="tabs-1" class="tab clearfix" >
                                         <div class="detail clearfix">
-                                            <p>本区域填写房屋详情</p>
+                                            {% if params.msg=='collected' %}
+                                            <div style="position:relative;float:right;"><span class='like'><img src="/static/images/hongxin.png"  style="height:50px;" class="hongxin"><span class="islike">已收藏</span></span></div>
+                                            {% else %}
+                                            <div style="position:relative;float:right;"><span class='like'><img src="/static/images/huixin.png"  style="height:50px;" class="hongxin"><span class="islike">未收藏</span></span></div>
+                                            {% endif %}
+                                            <p style="font-size:28px;color:royalblue;">{{params.house.title}}</p>
+                                            <p style="font-size:24px;color:rebeccapurple;">{{params.house.price}}元/月</p>
+                                            <p style="font-size:20px;color:darkblue;">{{params.house.house_description1}}</p>
+                                            <div style="display:none;" id="house_id">{{params.house.id}}</div>
+                                            
                                             
                                             <!-- <h2>Room Amenities</h2>
                                             <ul>
@@ -421,40 +424,45 @@
                                             </ul> -->
                                         </div>
                                     </div>
-                                    <!-- <div id="tabs-2" class="tab clearfix" >
+                                    <div id="tabs-2" class="tab clearfix" >
                                         <div class="detail">
-                                            <h2>Room Facilities</h2>
+                                            <h2 style="margin-bottom:50px;font-size:20px;">{{params.house.title}}</h2>
                                             <ul>
-                                                <li>Restaurants</li>
-                                                <li>Complimenttary Wi-Fi</li>
-                                                <li>Internet</li>
-                                                <li>Parking</li>
+                                                
+                                                <li>{{params.house.village}}</li>
+                                                <li>{{params.house.rent_pattern}}</li>
+                                                <li>{{params.house.room_type}}</li>
                                             </ul>
 
                                             <ul>
-                                                <li>Restaurants</li>
-                                                <li>Complimenttary Wi-Fi</li>
-                                                <li>Internet</li>
-                                                <li>Parking</li>
+                                                <li>{{params.house.district}}</li>
+                                                <li>{{params.house.pay_method}}</li>
+                                                <li>{{params.house.room_area}}</li>
+                                                
                                             </ul>
 
                                             <ul>
-                                                <li>Restaurants</li>
-                                                <li>Complimenttary Wi-Fi</li>
-                                                <li>Internet</li>
-                                                <li>Parking</li>
+                                                <li>{{params.house.region.strip()}}</li>
+                                                <li>{{params.house.contacts}}</li>
+                                                <li>朝向:{{params.house.chaoxiang}}</li>
+                                                
                                             </ul>
 
                                             <ul>
-                                                <li>Restaurants</li>
-                                                <li>Complimenttary Wi-Fi</li>
-                                                <li>Internet</li>
-                                                <li>Parking</li>
+                                                <li>{{params.house.detailed_address}}</li>
+                                                <li>{{params.house.contactnum}}</li>
+                                                <li>{{params.house.louceng}}</li>
                                             </ul>
 
-                                            <p>Feugiat consequat augue pulvinar fusce quis dui diam leo dictumst, fringilla quisque nulla nec blandit lectus aenean lobortis ultrices, fames dolor accumsan ultrices eleifend convallis himenaeos etiam.</p>
+                                        <div><br> <br> <br> <br> <br> <br> <br> <br> <p>
+                                                <span>如果您对本公寓有兴趣,可访问原地址查看更多详情</span>
+                                                <a href="{{ params.house.url }}">点击跳转</a>
+                                            </p>
+                                            </div>
                                         </div>
-                                    </div> -->
+                                        
+                                    </div>
+                                
                                     <div id="tabs-3" class="tab clearfix" >
                                         <div class="detail">
                                             <div class="map" id="container">
@@ -462,7 +470,8 @@
                                             </div>
 
                                             <h2>本公寓所在详细地址</h2>
-                                            <p>填写详细地址</p>
+                                            <p id='address'>{{params.house.district.strip()}}{{params.house.detailed_address.strip()}}</p>
+                                            <p>乘坐地铁:{{params.house.subway}}</p>
                                         </div>
                                     </div>
                                     <!-- <div id="tabs-4" class="tab clearfix" >
@@ -580,8 +589,6 @@
                                         </div>
                                     </div> -->
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -630,7 +637,30 @@
                     $(document).ready(function(){
                         $('.scrollbar1').tinyscrollbar();
                     });
-                    markLocation('container', '深圳市福田区深国投');
+                    $(function(){
+                        var address = $('#address').html();
+                        console.log(address);
+                        markLocation('container', address);
+                        $('.like').click(function(){
+                            var isLike = $('.islike').html()
+                            console.log(isLike)
+                            var id = $('#house_id').html()
+                            $.ajax({
+                                url:'/favor?id='+id,
+                                type:'get',
+                                dataType:'json',
+                                success:function(data){
+                                    if (data.status == 0){
+                                        $('.hongxin').attr('src','/static/images/huixin.png')
+                                        $('.islike').html('未收藏')
+                                    }else{
+                                        $('.hongxin').attr('src','/static/images/hongxin.png')
+                                        $('.islike').html('已收藏')
+                                    }
+                                }
+                            });  
+                        })
+                    })  
                 </script>
                 <script src="/static/js/index/custom.js"></script>		
 		</body>

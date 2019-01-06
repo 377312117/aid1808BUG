@@ -4,6 +4,7 @@ Users中的视图以及路由函数
 
 
 import os
+import random
 from datetime import datetime
 import json
 
@@ -45,6 +46,11 @@ def login():
             print('rememberme:',rememberme)
             session['uname']=user.name
             session['upwd']=upassword
+            session['uid'] = user.id
+
+            print('*********************')
+            print(session['uid'])
+            print('*********************')
             if rememberme == "1":
                 dic = {
                     'status':2,
@@ -127,6 +133,11 @@ def setsession():
     if  session.get('uname','') and session.get('upwd',''):
         uname = session.get('uname','')
         upwd = session.get('upwd','')
+        user = Users.query.filter_by(name=uname).first()
+        session['uid'] = user.id
+        print('********************')
+        print(session['uid'])
+        print('********************')
         resp = redirect('/')
         resp.set_cookie('uname',uname,7*24*60*60)
         resp.set_cookie('upwd',upwd,7*24*60*60)
@@ -139,6 +150,11 @@ def cancel():
     if 'uname' in session and 'upwd' in session:
         del session['uname']
         del session['upwd']
+        del session['uid']
+        if "district" in session:
+            del session['district']
+            del session['high_price']
+            del session['low_price']
     if 'uname' in request.cookies and 'upwd' in request.cookies:
         resp.delete_cookie('uname')
         resp.delete_cookie('upwd')
@@ -161,6 +177,10 @@ def register():
             db.session.add(user)
             session['uname']=username
             session['upwd'] =upassword
+            session['uid'] = user.id
+            print('**************')
+            print(session['uid'])
+            print('***************')
             dic = {
                 'status':1,
                 'info':'恭喜你注册成功',
@@ -181,10 +201,36 @@ def private():
     '''用于展示个人主页'''
     uname=session.get('uname','')
     user = Users.query.filter_by(name=uname).first()
-    print('user:',user)
+    # print('user:',user)
     if request.method == 'GET':
         # print(f"user:{user},{user.selfinfo}")
-        return  render_template('/private.html',user=user)
+
+        histories = user.history_houses.distinct().all()[-1:-10:-1]
+
+        collections = user.favor_houses.distinct().all()[::-1]
+
+
+
+        if len(histories):
+            message1 = "您的历史记录如下(只保留九条)"
+        else:
+            message1 = "您暂无历史记录，为您做如下推荐"
+            count = Houses.query.count()
+            l = [random.randint(1, count) for _ in range(3)]
+            histories = Houses.query.filter(Houses.id.in_(l)).all()
+
+        if len(collections):
+            message2 = "您的收藏记录如下"
+        else:
+            message2 = "您暂未收藏任何房屋信息，为您做以下推荐:"
+            count = Houses.query.count()
+            print("******************************")
+            print(count)
+            print("******************************")
+            l = [random.randint(1, count) for _ in range(9)]
+            collections = Houses.query.filter(Houses.id.in_(l)).all()
+
+        return  render_template('/private.html',params=locals())
     else:
         if request.files.get('uimg',''):
             # 处理上传的文件
@@ -211,5 +257,6 @@ def private():
         user.email = request.form.get('email','')
         user.phonenumber = request.form.get('phonenumber','')
         db.session.commit()
-        return render_template('/private.html',user=user)
+        return render_template('/private.html',params=locals())
+
 

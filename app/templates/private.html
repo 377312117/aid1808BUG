@@ -279,6 +279,12 @@
             font-size: 16px;
             color: rgba(245, 240, 240, 0.5);
         }
+        .house_url{
+            height: 35px;
+            width: 130px;
+            background-color:rgba(17, 23, 27, 0.5);
+            font-size: 16px;
+        }
         #logicnumber {
 		    visibility: hidden;
         }
@@ -326,11 +332,11 @@
             <div class="content first-content">
               <div class="container-fluid">
                   <div class="col-md-3">
-                      <div class="author-image"><img src="{{user.imgpath}}" alt=""></div>
+                      <div class="author-image"><img src="{{params.user.imgpath}}" alt=""></div>
                   </div>
                   <div class="col-md-9">
-                      <h2>{{user.name}}</h2>
-                      <p style="font-size:20px;">{{user.name}}您好!<br>欢迎您进入您的主页!</p>
+                      <h2>{{params.user.name}}</h2>
+                      <p style="font-size:20px;">{{params.user.name}}您好!<br>欢迎您进入您的主页!</p>
                       <div class="main-btn"><a href="#2">查看个人简介</a></div>
                       <div class="main-btn"><form action="/" method="GET"><button type="submit" class="self-btn">前往主页</button></form></div>
                       <div class="main-btn"><form action="/cancel" method="POST"><button type="submit" class="self-btn">退出登录</button></form></div>
@@ -343,7 +349,7 @@
                 <div class="container-fluid">
                     <div class="col-md-6">
                         <div class="left-content">
-                            <h2>{{user.name}}您好!</h2>
+                            <h2>{{params.user.name}}您好!</h2>
                             <div id='infor'>
                             <form action="/private" method="POST" name='form1' enctype="multipart/form-data">
                                 <div class="inputFileWrapper">
@@ -357,11 +363,11 @@
                                 </div>
                                 <span class="note">账户密码:</span><input type="password" id='upassword' class='input_control' name='upwd' placeholder="请在这里修改密码"><br>
                                 <div id='loginprompt'></div>
-                                <span class='note'>手机号:</span> <input type="number" id='uphonenumber' class='input_control' name="phonenumber" value="{{user.phonenumber}}"><br>
+                                <span class='note'>手机号:</span> <input type="number" id='uphonenumber' class='input_control' name="phonenumber" value="{{params.user.phonenumber}}"><br>
                                 <div id="numberprompt"></div>
-                                <span class='note'>邮箱  :</span> <input type="email" name="email" id= 'uemail' value="{{user.email}}" class='input_control' ><br>
+                                <span class='note'>邮箱  :</span> <input type="email" name="email" id= 'uemail' value="{{params.user.email}}" class='input_control' ><br>
                                 <div id='emailprompt'></div>
-                                <span class="note">个人简介: </span><textarea name="textarea" id="textarea" cols="42" rows="10" placeholder="请输入您的简介">{{user.selfinfo}}</textarea><br>
+                                <span class="note">个人简介: </span><textarea name="textarea" id="textarea" cols="42" rows="10" placeholder="请输入您的简介">{{params.user.selfinfo}}</textarea><br>
                                 <!-- 将值赋予下面隐藏输入框.传回给服务端 -->
 			                    <div class='hidden'><input type="text" id='hidden' name='upassword'></div>
                                 <input type="submit" name='submit' value='提交修改' id='submitinfo' class='getvalue'>
@@ -372,7 +378,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="right-image" id='show_headimg'>
-                          <img src="{{user.imgpath}}" alt="" >
+                          <img src="{{params.user.imgpath}}" alt="" >
                       </div>
                     </div>
                 </div>
@@ -384,27 +390,31 @@
                 <div class="container-fluid">
                     <div class="col-md-12">
                         <div class="row">
+                            <span style="font-size:18px;color: aquamarine;">{{params.message1}}:</span>
                             <!-- 对下面内容进行for循环进行展示 -->
-                            {# for house in params.histories #}
+                            {% for house in params.histories %}
                             <div class="first-section">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-content">
-                                                <h2>公寓1</h2>
-                                                <p>公寓简介,这里示意公寓的的简单介绍</p>
-                                                <div class="main-btn"><a href="/">前往官网查看</a></div>
+                                                <h2>{{house.village}}</h2>
+                                                <h3 style="color:antiquewhite;font-size:18px;">{{house.price}}元/月</h3>
+                                                <p>{{house.house_description1}}</p>
+                                                <!-- 在此处添加具体的详情 -->
+                                                <button class="house_url"><a href="/index_detail?id={{house.id}}">前往详情页查看</a></button>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="right-image">
-                                                <img src="/static/images/first_service.jpg" alt="first service">
+                                                <!-- 关联房屋的第一张图片 -->
+                                                <img src="/static/images/downloads/{{house.picture_name.split(';')[1]}}.jpg" alt="first service">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {# endfor #}
+                            {% endfor %}
                             <!-- 这是可以新添的地方 -->
                             <!-- 每一条浏览记录新增一个模块 -->
                         </div>
@@ -417,28 +427,36 @@
             <div class="content fourth-content">
                 <div class="container-fluid">
                     <div class="row">
+                        <div style="font-size:18px;text-align:left;color: aquamarine;float: left;width: 900px;">{{params.message2}}</div>
                         <!-- 对下面内容进行循环 -->
-                        {# for house in params.collection #}
+                        {% for house in params.collections %}
                         <div class="col-md-4 col-sm-6">
                             <div class="item">
-                                <div class="thumb">
-                                    <!-- <a href="/static/images/first_big_item.jpg" data-lightbox="image-1">-->
+                                    <a href="/index_detail?id={{house.id}}">
+                                <!-- <div class="thumb"> -->
+                                    <!-- <a href="/static/images/first_big_item.jpg" data-lightbox="image-1"> -->
                                         <div class="hover-effect"> 
                                         <div class="hover-content">
-                                            <h2>Number One</h2>
-                                            <p>Quisque sit amet lacus in diam pretium faucibus. Cras vel justo lorem.</p>
+                                            <h2></h2>
+                                            <div>
+                                                <p style="font-size:20px;">{{house.village}}</p>
+                                                <p style="font-size:16px;color: aquamarine;">{{house.price}}元/月</p>
+                                                <p style="font-size:14px;color:cornflowerblue;;">{{house.title}}</p> 
+                                            </div>
                                         </div>
                                     </div>
                                 <!-- </a> -->
-                                    <div class="image">
-                                        <a href="/"><img src="/static/images/first_item.jpg"></a>
-                                    </div>
+                                    <!-- <div class="image"> -->
+                                        <!-- 在链接中填写跳至详情页的路由 -->
+                                        <img src="/static/images/downloads/{{house.picture_name.split(';')[1]}}.jpg">
+                                    </a>
+                                    <!-- </div> -->
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
-                        {# endfor #}
+                        {% endfor %}
                         <!-- 截止于此处 -->
-
+                        
                     </div>
                 </div>
             </div>

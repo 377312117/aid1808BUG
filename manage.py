@@ -10,8 +10,7 @@ from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager, Shell, prompt_bool
 import os
 
-from app.main.getdata import get_lastdata
-
+from app.ganji import ganji_house_data
 
 
 from app import create_app,db
@@ -49,7 +48,7 @@ def drop():
 @manager.command
 def crawling(): 
     print('获取数据中')
-    get_lastdata()
+    ganji_house_data()
     print('获取完成')
 
 # 删除下载文件夹中所有的照片

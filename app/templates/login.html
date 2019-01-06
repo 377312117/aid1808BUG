@@ -130,7 +130,7 @@
 									$('#pwdprompt').html('*登录成功!');
 									$('#pwdprompt').css('color',"green");
 									$('#pwdprompt').css('font-size',"14px");
-									setTimeout("window.location.href='/'",800);
+									setTimeout("window.location.href='/'",500);
 									
 									// return true;
 								}else if(data.status == 2){
@@ -346,7 +346,7 @@
 								$('#regsubmitprompt').css('color',"green");
 								$('#regsubmitprompt').css('font-size',"14px");
 								console.log(data.info);
-								setTimeout("window.location.href='/'",800);
+								setTimeout("window.location.href='/'",500);
 								// return true;
 							}else{
 								$('#regsubmitprompt').html('*发生异常!');

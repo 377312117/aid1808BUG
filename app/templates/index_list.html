@@ -78,15 +78,15 @@
 
                                     <!-- 搜索功能 -->
 					                <div class="span4 srch">
-                                        <form>
-                                            <input type="text" name="search" placeholder="请输入您需要查找的区域" id="searchadd">
+                                        <form action='/index_list' method="POST" >
+                                            <input type="text" name="Location" placeholder="请输入您需要查找的区域" id="searchadd">
                                             <input type="submit" value="">
                                         </form>
 					                </div>
 					                <div class="span3" id="login-link">
 					                	<!-- <div class="social-nav">
 					                    </div> -->
-                                        <a href="/private" class="sign-in" >{{uname}}的个人主页</a>
+                                        <a href="/private" class="sign-in" >{{params.uname}}的个人主页</a>
                                         <a href="/cancel" class="sign-in">退出</a>
 					                </div>
 					            </div>
@@ -144,7 +144,7 @@
                                                 <li><a href="index3.html">Home 3 </a></li>
                                             </ul> -->
                                         </li>
-                                        <li><a href="/index_list">房屋详情</a></li>
+                                        <li><a href="/index_list?com=default&pn=1">房屋详情</a></li>
                                        	  <!-- <ul class="clearfix">
                                                 <li><a href="travel_grid.html">Travel Grid</a></li>
                                                 <li><a href="travel_list.html">Travel list</a></li>
@@ -228,40 +228,37 @@
                             <div class="span3" id="sidebar">
 
                                 <div id="widget_accordion">
-                                    <h3> 选择区域 <a href="#"></a></h3>
+                                    <!-- <h3> 选择区域 <a href="#"></a></h3>
                                     <div class="widget">
                                         <div class="scrollbar1">
                                             <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
                                             <div class="viewport">
                                                 <div class="overview">
                                                     <ul>
-                                                        <li><a href="#">福田区</a> <span>(9)</span></li>
-                                                        <li><a href="#">罗湖区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">南山区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">龙华区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">宝安区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">龙岗区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">盐田区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">坪山区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">光明区 </a> <span>(16)</span></li>
-                                                        <li><a href="#">大鹏新区 </a> <span>(16)</span></li>  
+                                                        <li><a href="/index_list?com=福田&pn=1">福田区</a> </li>
+                                                        <li><a href="/index_list?com=罗湖&pn=1">罗湖区 </a></li>
+                                                        <li><a href="/index_list?com=南山&pn=1">南山区 </a></li>
+                                                        <li><a href="/index_list?com=龙华&pn=1">龙华区 </a> </li>
+                                                        <li><a href="/index_list?com=宝安&pn=1">宝安区 </a> </li>
+                                                        <li><a href="/index_list?com=龙岗&pn=1">龙岗区 </a></li>
+                                                        <li><a href="/index_list?com=盐田&pn=1">盐田区 </a> </li>
+                                                        <li><a href="/index_list?com=坪山&pn=1">坪山区 </a> </li>
+                                                        <li><a href="/index_list?com=光明&pn=1">光明区 </a> </li>
+                                                        <li><a href="/index_list?com=大鹏&pn=1">大鹏新区 </a></li>  
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
 
                                     <h3> 价格区间 <a href="#"></a></h3>
                                     <div class="widget">
-                                        <form>
-                                            <select>
-                                                <option>¥0 - ¥2000</option>
-                                                <option>¥2000 - ¥3500</option>
-                                                <option>¥3500 - ¥5000</option>
-                                                <option>¥5000 - ¥6500</option>
-                                                <option>¥6500 以上</option>
-                                            </select>
+                                        <form method="POST" action="/index_list">
+                                            <input type="text" placeholder="区域(如:宝安区)" name="Location">
+                                            <input type="number" placeholder="最低价" name='low_price' value="1000">
+                                            <input type="number" placeholder="最高价" name='high_price' value="2000">
+                                            <input type="submit" value='搜索' style="margin-top:10px;">
                                         </form>
                                     </div>
 
@@ -330,14 +327,17 @@
 
                             <div class="span9 right_content">
                                 <div class="row">
-                                    <div class="portfolio-nav span9 clearfix">
+                                    <div class="portfolio-nav span9 clearfix"  style="margin-bottom:0px;">
                                         <strong>排序方式:</strong>
-                                        <ul class="option-set clearfix" data-option-key="filter">
-                                            <li><a href="#filter" data-option-value="*"  class="selected">默认排序</a></li>
-                                            <li><a href="#filter" data-option-value=".branding" >好评度排序 </a></li>
-                                            <li><a href="#filter" data-option-value=".price" >价格排序</a></li>
-                                            <li><a href="#filter" data-option-value=".star" >收藏优先</a></li>
-                                            <li><a href="#filter" data-option-value=".rate" >访问历史优先</a></li>
+                                        <ul >
+                                            <li><a href="/index_list?com=default&pn=1"  class="selected">默认排序</a></li>
+                                            {% if params.com=='0' %}
+                                            <li><a href="/index_list?com=1" id='price_order' >价格排序</a></li>
+                                            {% else %}
+                                            <li><a href="/index_list?com=0" id='price_order' >价格排序</a></li>
+                                            {% endif %}
+                                            <li><a href="/index_list?com=coll"  >收藏优先</a></li>
+                                            <li><a href="/index_list?com=his"  >访问历史优先</a></li>
                                         </ul>
                                         
                                         <!-- <div class="grid_btn">
@@ -349,20 +349,31 @@
                                     </div>
                                 </div>
 
-
+                                <div style="font-size:25px;color:pink;margin-bottom:30px;">{{params.message}}</div>
                                 <div class="row travel_lest" id="project-container">
-                                    {# for house in params.houses #}
+                                    
+                                    {% for house in params.houses %}
                                     <div class=" span9 offer element branding">
                                         <figure>
-                                            <img src="/static/images/index/default270x167.jpg"   alt="Offer Image">
-                                            <div class="overlay">
-                                                <a class="like"></a>
-                                            </div>
+                                            <img src="/static/images/downloads/{{house.picture_name.split(';')[1]}}.jpg"   alt="Offer Image">
+                                            <!-- <div class="overlay">
+                                                <span class="like"></span>
+                                            </div> -->
                                         </figure>
-                                        <article>
-                                            <h3>Blue beach</h3>
-                                            <h4>thailand</h4>
-                                            <div>
+                                        <article style="height:186px;">
+                                            <h3>
+                                                {{ house.village }} 
+                                                <span style="font-size:16px;float: right;color: grey">更新时间:{{ house.last_time }}</span>
+                                            </h3>
+                                            <h4>{{ house.district }}</h4>
+                                            <h4>
+                                                {{house.room_type}}
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                {{house.decoration_method}}
+                                            </h4>
+                                            <h4>{{ house.subway }}</h4>
+
+                                            <!-- <div>
                                                 <p>
                                                     <a href="#" class="active"></a>
                                                     <a href="#" class="active"></a>
@@ -371,25 +382,35 @@
                                                     <a href="#"></a>
                                                 </p>
                                                 <span>Read 8 Reviews</span>
-                                            </div>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                            </div> -->
+                                            
+                                            <p>{{ house.title }}</p>
                                         </article>
-                                        <div class="price">
-                                            <h3>138$</h3>
-                                            <a href="/index_detail"></a>
+                                        <div class="price" style="height:192px;">
+                                            <h3 style="font-size:20px;">{{house.price}}元/月</h3>
+                                            <a href="/index_detail?id={{house.id}}"></a>
+                                            <input type="text" value='{{house.id}}' id="house_id" style="display:none;">
                                         </div>
                                     </div>
-                                    {# endfor #}
+                                    {% endfor %}
 
                                 </div>
 
                                 <span class="border"></span>
                             
                                 <div class="pagination clearfix">
-                                    <p>Showing<a href="#"> 9 </a>page   <a href="#">45</a></p>
+                                    <p>Showing<a href="#">   {{params.pn}}页 </a></p>
                                     <div class="errows">
-                                        <a href="#" class="left_errow"></a>
-                                        <a href="#" class="right_errow"></a>
+                                        {% if params.pn == 1 %}
+                                        <a href="/index_list?com={{params.com}}&pn={{params.pn-1}}" onclick="return false;" style="background-color:darkgray;" class="left_errow"></a>
+                                        {% else %}
+                                        <a href="/index_list?com={{params.com}}&pn={{params.pn-1}}" class="left_errow"></a>
+                                        {% endif %}
+                                        {% if params.houses %}
+                                        <a href="/index_list?com={{params.com}}&pn={{params.pn+1}}" class="right_errow"></a>
+                                        {% else %}
+                                        <a href="/index_list?com={{params.com}}&pn={{params.pn+1}}" onclick="return false;" style="background-color:darkgray;" class="right_errow"></a>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
@@ -454,11 +475,23 @@
                 </script>
                 <script src="/static/js/index/custom.js"></script>	
                 <script>
-                    $(function(){
-                        $('.like').click(function(){
-                            console.log('设置悬浮显示信息')
-                        })
-                    })
-                </script>	
+                    // $(function(){
+                    //     $('.like').click(function(){
+                    //         var id = $('#house_id').val()
+                    //         console.log(id)
+                    //         $.ajax({
+                    //             url:'/favor?id='+id,
+                    //             type:'get',
+                    //             dataType:'json',
+                    //             success:function(data){
+                    //                 if (data.status == 1){
+                    //                     alert('收藏成功!')
+                    //                 }
+                    //             }
+                    //         });  
+                    //     })
+                    // })
+                </script>
+                <input type="number" name="btn" id="jishu_btn" value=0 style="display:none"/>；	
 		</body>
 </html>

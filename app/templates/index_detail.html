@@ -129,7 +129,7 @@
                             <div class="span4">
                             	<div class="logo">
                                     <!-- 修改logo -->
-                                	<a href="#"><img src="/static/images/index/logo.png" alt="Logo" id="logoimg"></a>
+                                	<a href="/"><img src="/static/images/index/logo.png" alt="Logo" id="logoimg"></a>
                                 </div>
                             </div>
                         	<!-- Logo -->
@@ -236,8 +236,8 @@
                 	<div class="container">
                     	<div class="row">
                         	<div class="span12">
-                            	<a href="">主页</a>
-                                <span class="crum">列表页</span>
+                            	<a href="/">主页</a>
+                                <span class="crum"><a href='#' onclick="javascript:history.back(-1);">列表页</a></span>
                                 <span class="crum">详情页</span>
                             </div>
                         </div>
@@ -346,12 +346,14 @@
                                 <div class="carousel_wrap">
                                     <div id="carousel-wrapper">
                                         <div id="carousel_two" class="cool-carousel">
+                                            {# for img in params.house.picture_name.split(';')[1:] #}
                                             <span id="image1"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[1]}}.jpg"  alt=""/></span>
                                             <span id="image2"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[2]}}.jpg"  alt="" /></span>
                                             <span id="image3"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[3]}}.jpg"  alt="" /></span>
                                             <span id="image4"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[4]}}.jpg"  alt=""/></span>
                                             <span id="image5"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[5]}}.jpg"  alt=""/></span>
                                             <span id="image6"><img src="/static/images/downloads/{{params.house.picture_name.split(';')[6]}}.jpg"  alt="" /></span>
+                                            {# endfor #}
                                         </div>
                                         <a href="#" class="prev"></a><a href="#" class="next"></a>
                                     </div>

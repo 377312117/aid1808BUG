@@ -108,6 +108,27 @@ def checknumber():
         }
     return json.dumps(dic)
 
+@users.route('/02-alternumber',methods=['GET','POST'])
+def alternumber():
+    '''检查手机号是否合格'''
+    phonenumber = request.args.get('phonenumber','')
+    uname= request.args.get('uname','')
+    print('phonenumber:',phonenumber)
+    print('uname',uname)
+    user= Users.query.filter_by(phonenumber=phonenumber).first()
+    yz_user = Users.query.filter_by(name=uname).first()
+    if user and phonenumber != yz_user.phonenumber:
+        dic = {
+            'status':1,
+            'info':'该手机号已经被其他用户注册,请重新输入',
+        }
+    else:
+        dic = {
+            'status':0,
+            'info':'该手机号未注册或您未修改您的号码,可继续注册',
+        }
+    return json.dumps(dic)
+
 @users.route('/03-checkemail',methods=['GET','POST'])
 def checkemail():
     '''检查邮箱是否合格'''
@@ -123,6 +144,27 @@ def checkemail():
         dic = {
             'status':0,
             'info':'该邮箱未注册,可继续注册',
+        }
+    return json.dumps(dic)
+
+@users.route('/03-alteremail',methods=['GET','POST'])
+def alteremail():
+    '''检查邮箱是否合格'''
+    uemail = request.args.get('uemail','')
+    print('uemail:',uemail)
+    uname= request.args.get('uname','')
+    print('uname',uname)
+    user= Users.query.filter_by(email=uemail).first()
+    yz_user = Users.query.filter_by(name=uname).first()
+    if user and user != yz_user:
+        dic = {
+            'status':1,
+            'info':'该邮箱已经注册,请重新输入',
+        }
+    else:
+        dic = {
+            'status':0,
+            'info':'该邮箱未注册或您未修改邮箱,可继续修改',
         }
     return json.dumps(dic)
 
@@ -209,18 +251,16 @@ def private():
 
         collections = user.favor_houses.distinct().all()[::-1]
 
-
-
         if len(histories):
-            message1 = "您的历史记录如下(只保留九条)"
+            message1 = "您的历史记录如下(只保留九条):"
         else:
-            message1 = "您暂无历史记录，为您做如下推荐"
+            message1 = "您暂无历史记录，为您做如下推荐:"
             count = Houses.query.count()
             l = [random.randint(1, count) for _ in range(3)]
             histories = Houses.query.filter(Houses.id.in_(l)).all()
 
         if len(collections):
-            message2 = "您的收藏记录如下"
+            message2 = "您的收藏记录如下:"
         else:
             message2 = "您暂未收藏任何房屋信息，为您做以下推荐:"
             count = Houses.query.count()
@@ -229,6 +269,8 @@ def private():
             print("******************************")
             l = [random.randint(1, count) for _ in range(9)]
             collections = Houses.query.filter(Houses.id.in_(l)).all()
+
+        print("hellooooooooooooooooooooooo")
 
         return  render_template('/private.html',params=locals())
     else:
@@ -248,15 +290,35 @@ def private():
             defaultpath=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             filepath = defaultpath+r'/static/images/uploads/'+filename
             print('filepath:',filepath)
+
+
             f.save(filepath)
+
+
             user.imgpath = r'/static/images/uploads/'+filename
+
+
         if request.form.get('upassword','') :
             user.password = request.form.get('upassword','')
             session['upwd'] =request.form.get('upassword','')
+
+
         user.selfinfo = request.form.get('textarea','')
         user.email = request.form.get('email','')
         user.phonenumber = request.form.get('phonenumber','')
-        db.session.commit()
-        return render_template('/private.html',params=locals())
+
+        try:
+            db.session.add(user)
+            db.session.commit()
+        except:
+            print("**************************")
+            print("skrskrskr")
+            print("**************************")
+        else:
+            print("***************************")
+            print("666666666666666666666666666")
+            print("****************************")
+
+        return redirect('/private')
 
 

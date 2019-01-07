@@ -310,31 +310,36 @@ def ganji_house_data():
                     introduce,      # 详情介绍                   
                     url,            # 访问链接
                     picture_name    # 图片文件名
-                ])  
-                house = Houses(
-                    title=title,
-                    price=price,
-                    pay_method=payment,
-                    last_time=lasttime,
-                    louceng=louceng,
-                    chaoxiang=chaoxiang,
-                    subway=subway,
-                    rent_pattern=lease_type,
-                    room_type=room,
-                    room_area=area,
-                    decoration_method=finish,
-                    district=county,
-                    region=street,
-                    village=xiaoqu,
-                    detailed_address=address,
-                    contactnum=numphone,
-                    contacts=on_sale,
-                    house_description1=introduce,
-                    url=url,
-                    picture_name=picture_name
-                )
-                db.session.add(house)
-                db.session.commit()
+                ])
+                yz_house = Houses.query.filter_by(title=title).first()
+                if xiaoqu != '无' or not yz_house:
+                    house = Houses(
+                        title=title,
+                        price=price,
+                        pay_method=payment,
+                        last_time=lasttime,
+                        louceng=louceng,
+                        chaoxiang=chaoxiang,
+                        subway=subway,
+                        rent_pattern=lease_type,
+                        room_type=room,
+                        room_area=area,
+                        decoration_method=finish,
+                        district=county,
+                        region=street,
+                        village=xiaoqu,
+                        detailed_address=address,
+                        contactnum=numphone,
+                        contacts=on_sale,
+                        house_description1=introduce,
+                        url=url,
+                        picture_name=picture_name
+                    )
+                    db.session.add(house)
+                    db.session.commit()
+                else:
+                    print('插入重复或数据缺失')
+                    continue
                           
                 
         print('数据读取完毕......')     

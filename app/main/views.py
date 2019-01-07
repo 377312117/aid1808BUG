@@ -111,12 +111,17 @@ def index_list():
             pn = 1
 
         if com == "default":
-            if "district" in session:
-                houses = Houses.query.filter(Houses.district.like(session['district'] + '%'), Houses.price > session['low_price'],Houses.price < session['high_price']).paginate(page=pn, per_page=9,error_out=False).items
-            else:
+            # if "district" in session:
+            #     houses = Houses.query.filter(Houses.district.like(session['district'] + '%'), Houses.price > session['low_price'],Houses.price < session['high_price']).paginate(page=pn, per_page=9,error_out=False).items
+            # else:
                 # l = [random.randint(1,Houses.query.count()) for _ in range(9)]
                 # houses = Houses.query.filter(Houses.id.in_(l)).all()
-                houses = Houses.query.paginate(page=pn,per_page=9,error_out=False).items
+            houses = Houses.query.paginate(page=pn,per_page=9,error_out=False).items
+            if 'district' in session:
+                del session['district']
+                del session['high_price']
+                del session['low_price']
+
         elif com == "1":
             if "district" in session:
                 houses = Houses.query.filter(Houses.district.like(session['district'] + '%'),
@@ -158,7 +163,6 @@ def index_list():
         high_price = request.form.get("high_price",500,type=int)
         low_price = request.form.get("low_price",30000,type=int)
         pn = 1
-        com = "default"
 
         if district:
             houses = Houses.query.filter(Houses.district.like(district + '%'), Houses.price >= low_price,Houses.price <= high_price).all()

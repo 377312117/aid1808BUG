@@ -55,7 +55,7 @@ class Houses(db.Model):
     # 更新时间
     last_time = db.Column(db.String(100))
     # 价格
-    price = db.Column(db.String(200))
+    price = db.Column(db.Integer)
     # 支付方式
     pay_method = db.Column(db.String(100))
     # 出租方式

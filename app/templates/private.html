@@ -32,40 +32,44 @@
                         $('#loginprompt').css('color','green');
                         $('#logicpwd').val('1')
                         return true;
+                    }else if(regpwd==''){
+                        $('#loginprompt').html('*(6位~20位,不可包含"/"或者空格等特殊字符)')
+                        $('#loginprompt').css('font-size','14px');
+                        $('#loginprompt').css('color','white');
+                        setTimeout("$('#loginprompt').html('')",2000);
+                        $('#logicpwd').val('1')
+                        
                     }else{
                         $('#loginprompt').html('*(6位~20位,不可包含"/"或者空格等特殊字符)')
                         $('#loginprompt').css('font-size','14px');
                         $('#loginprompt').css('color','red');
                         setTimeout("$('#loginprompt').html('')",2000);
                         $('#logicpwd').val('')
-                        return false;
                     }
                 };
                 $('#upassword').blur(check_pwd);
-                $('#upassword').focus(function(){
-                    $('#loginprompt').html('*(6位~20位,不可包含"/"或者空格等特殊字符)')
-                    $('#loginprompt').css('font-size','14px');
-                    $('#loginprompt').css('color','white');
-                }); 
+                
                 // 验证电话号码
                 function check_phonenumber(){
                     var regnumber = $('#uphonenumber').val()
+                    // 获取uname
+                    var uname = $('#get_uname').html()
                     // 设置正则表达式
                     var numberExp = new RegExp(/^1\d{10}$/);
                     if(numberExp.test(regnumber)){
                         $.ajax({
-                            url:'/02-checknumber?phonenumber='+regnumber,
+                            url:'/02-alternumber?phonenumber='+regnumber+'&uname='+uname,
                             type:'get',
                             dataType:'json',
                             success:function(data){
                                 if (data.status == 1){
-                                    $('#numberprompt').html('*该手机号已经被注册!请重新输入');
+                                    $('#numberprompt').html('*该手机号已经被其他用户注册!请重新输入');
                                     $('#numberprompt').css('color',"red");
                                     $('#numberprompt').css('font-size',"14px");
                                     $('#logicnumber').val('')
                                     return false;
                                 }else{
-                                    $('#numberprompt').html('*该手机号未被注册,可继续注册');
+                                    $('#numberprompt').html('*该手机号未注册或您未修改您的号码,可继续修改');
                                     $('#numberprompt').css('color',"green");
                                     $('#numberprompt').css('font-size',"14px");
                                     $('#logicnumber').val('1')
@@ -75,8 +79,9 @@
                         });
                     }else{
                         $('#numberprompt').html('*请输入您的手机号,符合电话号码格式');
-                        $('#numberprompt').css('color',"red");
+                        $('#numberprompt').css('color',"white");
                         $('#numberprompt').css('font-size',"14px");
+                        $('#logicnumber').val('')
                         setTimeout("$('#numberprompt').html('')",2000);
                         return false;
                     };
@@ -85,10 +90,12 @@
                 // 验证邮箱
                 function check_email(){
                     var regemail = $('#uemail').val()
+                    // 获取uname
+                    var uname = $('#get_uname').html()
                     var pattern= new RegExp(/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/);
                     if(pattern.test(regemail)){
                         $.ajax({
-                            url:'/03-checkemail?uemail='+regemail,
+                            url:'/03-alteremail?uemail='+regemail+'&uname='+uname,
                             type:'get',
                             dataType:'json',
                             success:function(data){
@@ -99,7 +106,7 @@
                                     $('#logicemail').val('');
                                     return false;
                                 }else{
-                                    $('#emailprompt').html('*该邮箱未被注册,可继续注册');
+                                    $('#emailprompt').html('*该邮箱未被注册或您未修改邮箱,可继续修改');
                                     $('#emailprompt').css('color',"green");
                                     $('#emailprompt').css('font-size',"14px");
                                     $('#logicemail').val('1');
@@ -109,7 +116,7 @@
                         });
                     }else{
                         $('#emailprompt').html('*请输入您的邮箱并符合邮箱格式');
-                        $('#emailprompt').css('color',"red");
+                        $('#emailprompt').css('color',"white");
                         $('#emailprompt').css('font-size',"14px");
 
                         setTimeout("$('#emailprompt').html('')",2000);
@@ -335,7 +342,7 @@
                       <div class="author-image"><img src="{{params.user.imgpath}}" alt=""></div>
                   </div>
                   <div class="col-md-9">
-                      <h2>{{params.user.name}}</h2>
+                      <h2 id='get_uname'>{{params.user.name}}</h2>
                       <p style="font-size:20px;">{{params.user.name}}您好!<br>欢迎您进入您的主页!</p>
                       <div class="main-btn"><a href="#2">查看个人简介</a></div>
                       <div class="main-btn"><form action="/" method="GET"><button type="submit" class="self-btn">前往主页</button></form></div>
@@ -390,7 +397,7 @@
                 <div class="container-fluid">
                     <div class="col-md-12">
                         <div class="row">
-                            <span style="font-size:18px;color: aquamarine;">{{params.message1}}:</span>
+                            <span style="font-size:18px;color: aquamarine;">{{params.message1}}</span>
                             <!-- 对下面内容进行for循环进行展示 -->
                             {% for house in params.histories %}
                             <div class="first-section">

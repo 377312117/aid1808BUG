@@ -3356,11 +3356,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="141" column="44" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+            <state relative-caret-position="782">
+              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
               <folding>
                 <element signature="e#34#43#0" expanded="true" />
                 <element signature="e#407#472#0" />
@@ -3368,6 +3368,7 @@
                 <element signature="e#671#2459#0" />
                 <element signature="e#751#906#0" />
                 <element signature="e#992#1252#0" />
+                <element signature="e#2549#8430#0" />
                 <element signature="e#2655#2810#0" />
                 <element signature="e#2896#3156#0" />
                 <element signature="e#6524#8218#0" />
@@ -3381,8 +3382,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="322" selection-start-line="322" selection-end-line="322" />
+            <state relative-caret-position="345">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#389#2150#0" />
                 <element signature="e#2220#2573#0" />
@@ -3393,15 +3394,16 @@
                 <element signature="e#3576#4081#0" />
                 <element signature="e#4148#4615#0" />
                 <element signature="e#4686#5791#0" />
+                <element signature="e#7120#9848#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
+            <state relative-caret-position="-1291">
               <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
             </state>
           </provider>
@@ -3463,7 +3465,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -3690,7 +3692,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -3743,6 +3745,7 @@
             <element signature="e#3576#4081#0" />
             <element signature="e#4148#4615#0" />
             <element signature="e#4686#5791#0" />
+            <element signature="e#7120#9848#0" />
           </folding>
         </state>
       </provider>
@@ -3765,6 +3768,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -3827,6 +3831,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -3889,6 +3894,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -3930,6 +3936,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -3992,6 +3999,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -4054,6 +4062,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -4088,6 +4097,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -4122,6 +4132,7 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
@@ -4179,17 +4190,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="322" selection-start-line="322" selection-end-line="322" />
+        <state relative-caret-position="345">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="e#389#2150#0" />
             <element signature="e#2220#2573#0" />
@@ -4200,14 +4204,15 @@
             <element signature="e#3576#4081#0" />
             <element signature="e#4148#4615#0" />
             <element signature="e#4686#5791#0" />
+            <element signature="e#7120#9848#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="141" column="44" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+        <state relative-caret-position="782">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
           <folding>
             <element signature="e#34#43#0" expanded="true" />
             <element signature="e#407#472#0" />
@@ -4215,12 +4220,20 @@
             <element signature="e#671#2459#0" />
             <element signature="e#751#906#0" />
             <element signature="e#992#1252#0" />
+            <element signature="e#2549#8430#0" />
             <element signature="e#2655#2810#0" />
             <element signature="e#2896#3156#0" />
             <element signature="e#6524#8218#0" />
             <element signature="e#8379#10062#0" />
             <element signature="e#10126#10962#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1291">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
